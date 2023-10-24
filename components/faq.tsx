@@ -1,15 +1,26 @@
+import { FaqItems } from "@/data/data"
+import FaqItem from "./faq-item"
 import Heading from "./ui/heading"
 
-const Faq = () => {
+const Faq = ({}) => {
   return (
     <section
-      className="container my-10"
+      className="container my-10 space-y-6"
     >
       <Heading
         title='Preguntas frecuentes'
         subtitle='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit'
         highlightWords={['preguntas', 'frecuentes']}
       />
+      {
+        FaqItems.map(({ question, answer, id }) => (
+          <FaqItem
+            key={id}
+            question={question}
+            answer={answer}
+          />
+        ))
+      }
     </section>
   )
 }

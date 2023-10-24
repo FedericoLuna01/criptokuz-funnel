@@ -1,25 +1,6 @@
-import { Instagram, Twitter, Youtube } from "lucide-react"
-
 import Logo from "./ui/logo"
 import { Button } from "./ui/button"
-
-const Contact_Items = [
-  {
-    id: 1,
-    href: '',
-    icon: <Instagram className="w-6 h-6" />
-  },
-  {
-    id: 2,
-    href: '',
-    icon: <Twitter className="w-6 h-6" />
-  },
-  {
-    id: 3,
-    href: '',
-    icon: <Youtube className="w-6 h-6" />
-  }
-]
+import { Contact_Items } from "@/data/data"
 
 const MainNav = () => {
   return (

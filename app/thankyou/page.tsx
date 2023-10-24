@@ -21,7 +21,9 @@ const ThankYouPage = () => {
         highlightWords={['gracias']}
         video='https://www.youtube.com/embed/dQw4w9WgXcQ?si=J6P-xiv3i1vIF9D5'
       />
-      <Testimonials />
+      <Testimonials
+        isMain={false}
+      />
       <Faq />
     </main>
   )

@@ -9,16 +9,14 @@ interface TestimonialProps {
 const Testimonial: React.FC<TestimonialProps> = ({ video, description, highlightWords = [] }) => {
   return (
     <article
-      className="space-y-4 max-w-2xl mx-auto"
+      className="space-y-4 max-w-4xl mx-auto"
     >
       <iframe
-        width="560"
-        height="315"
         src={video}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
-        className="rounded-lg w-full aspect-video "
+        className="rounded-lg w-full aspect-video"
       ></iframe>
       <p
         className='text-2xl font-semibold'
@@ -32,7 +30,6 @@ const Testimonial: React.FC<TestimonialProps> = ({ video, description, highlight
           autoEscape={true}
           textToHighlight={description}
         />
-        {description}
       </p>
     </article>
   )

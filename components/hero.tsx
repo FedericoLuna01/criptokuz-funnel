@@ -32,15 +32,14 @@ const Hero: React.FC<HeroProps> = ({
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
-          className="mx-auto rounded-lg w-[90%] h-[200px] sm:w-[80%] sm:h-[300px] md:w-[70%] md:h-[400px] lg:w-[60%] lg:h-[500px] "
+          className="mx-auto rounded-lg w-full max-w-6xl aspect-video"
         >
         </iframe>
         {
           // true === está en la página principal. De lo contrario thankspage
           isMain ?
             <Button
-              className="text-2xl font-semibold py-7 px-24"
-              size='lg'
+              size='xl'
               asChild
             >
               <a href="#calendly">Quiero aplicar</a>

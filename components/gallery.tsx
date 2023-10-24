@@ -33,8 +33,7 @@ const Gallery = () => {
           }
         </div>
         <Button
-          className="text-2xl font-semibold py-7 px-24"
-          size='lg'
+          size='xl'
           asChild
         >
           <a href="#calendly">Quiero aplicar</a>

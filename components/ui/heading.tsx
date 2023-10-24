@@ -9,7 +9,7 @@ export interface HeadingProps {
 const Heading: React.FC<HeadingProps> = ({ title, subtitle, highlightWords }) => {
   return (
     <div
-      className="text-center max-w-lg mx-auto space-y-4"
+      className="text-center max-w-2xl mx-auto space-y-4"
     >
       <h1
         className="text-5xl font-bold"
@@ -24,11 +24,11 @@ const Heading: React.FC<HeadingProps> = ({ title, subtitle, highlightWords }) =>
           textToHighlight={title}
         />
       </h1>
-      <p
+      {/* <p
         className="text-gray-200 text-xl"
       >
         {subtitle}
-      </p>
+      </p> */}
     </div>
   )
 }
