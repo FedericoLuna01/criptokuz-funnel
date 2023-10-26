@@ -4,14 +4,20 @@ export const TestimonialsItems = [
   {
     id: 1,
     video: 'https://www.youtube.com/embed/Ll9wtNyKdJU?si=OjDUpPdYNk4eTbX3',
-    description: 'Paso de ser ABOGADO a TRADER RENTABLE en menos de 90 DIAS',
+    description: 'De trabajar como ABOGADO a ser TRADER RENTABLE ',
     highlightWords: ['ABOGADO', 'TRADER RENTABLE', '90', 'DIAS']
   },
   {
     id: 2,
     video: 'https://www.youtube.com/embed/pct3sdSp6uI?si=FZVhM4UabuaMEEq1',
-    description: 'DE 0$ A GANAR MAS DE 1.200$ USD MENSUALES SIENDO TRADER OPERANDO MERCADO AMERICANO',
+    description: 'DE 0$ A GANAR MAS DE 1.200$ USD MENSUALES COMO TRADER OPERANDO FOREX',
     highlightWords: ['0$', '1.200$', 'USD', 'MENSUALES', 'TRADER', 'MERCADO', 'AMERICANO']
+  },
+  {
+    id: 3,
+    video: 'https://www.youtube.com/embed/pdGHuWVKqpQ?si=eQdOtrUzVTekcepb',
+    description: 'Tres PILARES que lo hicieron ganar mas de 15.000 USD ',
+    highlightWords: ['PILARES', '15.000', 'USD']
   }
 ]
 
@@ -41,12 +47,12 @@ export const FaqItems = [
 export const Contact_Items = [
   {
     id: 1,
-    href: '',
+    href: 'https://www.instagram.com/criptokuz',
     icon: <Instagram className="w-6 h-6" />
   },
   {
     id: 2,
-    href: '',
+    href: 'https://api.whatsapp.com/send?phone=542984674480&text=Hola,%20qué%20tal?%20Agende%20una%20sesión%20con%20Mauro%20por%20favor',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -65,12 +71,12 @@ export const Contact_Items = [
   },
   {
     id: 3,
-    href: '',
+    href: 'https://www.youtube.com/@MauroKuz/videos',
     icon: <Youtube className="w-6 h-6" />
   },
   {
     id: 4,
-    href: '',
+    href: 'https://open.spotify.com/show/4RvC4XKdiuYOrqDB3O7HMA?si=e2bc90d3735d4bf1&nd=1',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
         width={20}

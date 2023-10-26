@@ -2,6 +2,7 @@ import { TestimonialsItems } from "@/data/data";
 import { Button } from "./ui/button"
 import { Separator } from "./ui/separator"
 import Testimonial from "./ui/testimonial"
+import Heading from "./ui/heading";
 
 interface TestimonialProps {
   isMain?: boolean;
@@ -15,11 +16,10 @@ const Testimonials: React.FC<TestimonialProps> = ({
       <section
         className="container flex flex-col items-center justify-center space-y-6 my-10"
       >
-        <h1
-          className="text-5xl font-bold"
-        >
-          Testimoniales
-        </h1>
+        <Heading
+          title="Testimoniales"
+          highlightWords={['Testimoniales']}
+        />
         <div
           className="space-y-20"
         >
@@ -33,27 +33,15 @@ const Testimonials: React.FC<TestimonialProps> = ({
               />
             ))
           }
-          {/* <Testimonial
-            video='https://www.youtube.com/embed/fGqdIPer-ms?si=uh0bgcES7Buhxsh_'
-            description="Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de "
-            highlightWords={['simplemente', 'de']}
-          />
-          <Testimonial
-            video='https://www.youtube.com/embed/SWoKmOM1CQc?si=XRhoLiFtQ9QxF7Wv'
-            description="Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de "
-            highlightWords={['imprentas', 'archivos']}
-          /> */}
         </div>
         {
-          isMain ?
+          isMain &&
             <Button
               size='xl'
               asChild
             >
               <a href="#calendly">Quiero aplicar</a>
             </Button>
-            :
-            null
         }
       </section>
       <Separator className="container bg-gray-200" />

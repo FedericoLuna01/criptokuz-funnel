@@ -8,9 +8,20 @@ export default function Home() {
     <main>
       <Hero
         title='Descrubrí la clave del crecimiento de tu negocio'
-        subtitle='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit'
         highlightWords={['clave', 'negocio']}
-        video='https://www.youtube.com/embed/-CQK5DSMa20?si=AcMzQUNMhGufAw9s?autoplay=1'
+        video='https://www.youtube.com/embed/qOECE3AkOlQ?si=1ma39Jy4YcIn-e4G'
+      />
+      <Hero
+        title='Nuestro proceso para ser rentable en menos de 90 dias'
+        video='https://www.youtube.com/embed/htvXBn3_kuA?si=VnyL3PR-sTFOHGC8'
+        highlightWords={['rentable', '90 dias']}
+        isMain={false}
+      />
+      <Hero
+        title='Mis rendimientos en 30 dias operando'
+        video='https://www.youtube.com/embed/Fnx8-jEAYMM?si=AQ80Bvnaulwz6XkX'
+        highlightWords={['30 dias']}
+        isMain={false}
       />
       <Testimonials />
       <Gallery />

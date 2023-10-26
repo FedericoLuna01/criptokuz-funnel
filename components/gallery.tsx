@@ -13,16 +13,15 @@ const Gallery = () => {
       >
         <Heading
           title='Conoce a algunos de nuestos alumnos'
-          subtitle='Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat optio ipsum quae? Voluptas, suscipit? Deserunt dolorum rerum odio reiciendis mollitia.'
           highlightWords={['alumnos']}
         />
         <div
           className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 space-y-16 gap-10"
         >
           {
-            images.map((image) => (
+            images.map((image, index) => (
               <Image
-                key={image}
+                key={index}
                 src={`https://picsum.photos/id/${image}/${Math.ceil(image * 1.2)}/${Math.ceil(image + 300 * 1.2)}`}
                 width={350}
                 height={550}

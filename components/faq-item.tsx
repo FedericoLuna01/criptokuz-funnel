@@ -16,8 +16,8 @@ const FaqItem: React.FC<FaqItemProps> = ({
       <div
         className="flex items-center"
       >
-        <ChevronRight className="mr-1" strokeWidth={4} />
-        <h2 className="text-2xl font-semibold">{question}</h2>
+        <ChevronRight className="mr-1 md:block hidden" strokeWidth={4} />
+        <h2 className="text-xl sm:text-2xl font-semibold">{question}</h2>
       </div>
       <p
         className="text-md text-gray-300 mt-2"

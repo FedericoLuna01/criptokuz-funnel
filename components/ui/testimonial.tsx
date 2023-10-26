@@ -19,7 +19,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ video, description, highlight
         className="rounded-lg w-full aspect-video"
       ></iframe>
       <p
-        className='text-2xl font-semibold'
+        className='text-xl sm:text-2xl font-semibold'
       >
         <Highlighter
           highlightStyle={{

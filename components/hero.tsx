@@ -4,7 +4,6 @@ import { Separator } from "./ui/separator"
 
 interface HeroProps {
   title: string;
-  subtitle: string;
   highlightWords: string[];
   video: string;
   isMain?: boolean;
@@ -12,7 +11,6 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({
   title,
-  subtitle,
   highlightWords,
   video,
   isMain = true
@@ -24,7 +22,6 @@ const Hero: React.FC<HeroProps> = ({
       >
         <Heading
           title={title}
-          subtitle={subtitle}
           highlightWords={highlightWords}
         />
         <iframe
@@ -37,15 +34,13 @@ const Hero: React.FC<HeroProps> = ({
         </iframe>
         {
           // true === está en la página principal. De lo contrario thankspage
-          isMain ?
+          isMain &&
             <Button
               size='xl'
               asChild
             >
               <a href="#calendly">Quiero aplicar</a>
             </Button>
-            :
-            null
         }
       </section>
       <Separator className="container bg-gray-200" />
