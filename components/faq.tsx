@@ -9,7 +9,6 @@ const Faq = ({}) => {
     >
       <Heading
         title='Preguntas frecuentes'
-        subtitle='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit'
         highlightWords={['preguntas', 'frecuentes']}
       />
       {
