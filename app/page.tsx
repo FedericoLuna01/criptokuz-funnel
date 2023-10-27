@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <Hero
-        title='Descrubrí la clave del crecimiento de tu negocio'
+        title='Como ser un Trader Rentable y Consistente en menos de 90 dias'
         highlightWords={['clave', 'negocio']}
         video='https://www.youtube.com/embed/qOECE3AkOlQ?si=1ma39Jy4YcIn-e4G'
       />
