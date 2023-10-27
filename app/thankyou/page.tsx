@@ -17,7 +17,6 @@ const ThankYouPage = () => {
       <Hero
         isMain={false}
         title="¡Gracias por aplicar!"
-        subtitle="Pronto nos pondremos en contacto contigo"
         highlightWords={['gracias']}
         video='https://www.youtube.com/embed/dQw4w9WgXcQ?si=J6P-xiv3i1vIF9D5'
       />
