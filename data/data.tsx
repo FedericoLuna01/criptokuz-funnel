@@ -24,23 +24,38 @@ export const TestimonialsItems = [
 export const FaqItems = [
   {
     id: 1,
-    question: 'What is the best thing about Switzerland?',
-    answer: 'I do not know, but the flag is a big plus.'
+    question: '¿Que necesito para empezar?',
+    answer: 'No necesitas conocimientos previos, ni necesitas un capital de más de 5.000USD, solo necesitas una computadora, internet decente y mucho esfuerzo.'
   },
   {
     id: 2,
-    question: 'Did you hear about the mathematician who is afraid of negative numbers?',
-    answer: 'He will stop at nothing to avoid them.'
+    question: '¿Hace falta ser rico o tener mucho dinero para hacer trading?',
+    answer: 'No, siempre y cuando entiendas que vas a generar una parte promocional del capital con el que operes, podes empezar con la cantidad de dinero que quieras, incluso con menos de 500 USD'
   },
   {
     id: 3,
-    question: 'Why do we tell actors to “break a leg?”',
-    answer: 'Because every play has a cast.'
+    question: '¿Cuánto tardaré en hacer la mentoría y conseguir los resultados?',
+    answer: 'Desde el momento que ingreses, el objetivo principal es conseguir una taza de efectividad positiva, y en promedio normalmente nuestros alumnos se certifican entre 80/100 días.'
   },
   {
     id: 4,
-    question: 'Helvetica and Times New Roman walk into a bar.',
-    answer: '“Get out of here!” shouts the bartender. “We don’t serve your type.”'
+    question: '¿Operan solo mercado crypto?',
+    answer: 'No, la realidad es que el setup operativo, te permite operar en distintos mercados, pero siempre te recomendamos operar activos con liquidez, por ende una de nuestras reglas es no operar basura.'
+  },
+  {
+    id: 5,
+    question: '¿El acompañamiento es 1 a 1 todo el tiempo?',
+    answer: 'Si, nuestro acompañamiento es 1 a 1 con llamadas 24/7 porque justamente es lo que te va a permitir ser rentable, vamos a estar guiándote paso a paso hasta cumplir el objetivo de que te vuelvas un Trader Rentable.'
+  },
+  {
+    id: 6,
+    question: '¿Me voy a hacer rico rápido gracias a ustedes?',
+    answer: 'No, no somos los típicos que te van a vender que te vas a hacer rico rápido. Nosotros te ofrecemos un setup escalable que te rentabiliza tu capital de forma que obtengas unos retornos anuales mucho más interesantes que los que generarias con tu dinero en el banco o en cualquier fondo de inversión. Pero el retorno siempre será proporcional al capital con el que operes.'
+  },
+  {
+    id: 7,
+    question: '¿Cuántos cupos tienen al mes?',
+    answer: 'Siempre mantenemos 3-5 cupos al mes, por el hecho de que damos una mentoría super personalizada en base a las necesidades de nuestros alumnos, y es un enfoque mutuo de más de 90 días, por ende hoy dia no contamos con una infraestructura para aguantar mas de 5 estudiantes por mes.'
   }
 ]
 
