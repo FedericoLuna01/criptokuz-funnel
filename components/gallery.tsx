@@ -30,7 +30,7 @@ const Gallery: React.FC<GalleryProps> = ({
               images.map((image) => (
                 <Image
                   key={image}
-                  src={`/testimoniales_${image}.PNG`}
+                  src={`/testimoniales_${image}.webp`}
                   width={350}
                   height={550}
                   alt='Testimonial image'

@@ -29,7 +29,7 @@ const Hero: React.FC<HeroProps> = ({
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
-          className="mx-auto rounded-lg w-full max-w-6xl aspect-video"
+          className="mx-auto rounded-lg w-full max-w-5xl aspect-video"
         >
         </iframe>
         {

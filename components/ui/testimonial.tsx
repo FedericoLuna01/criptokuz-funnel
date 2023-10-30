@@ -9,7 +9,7 @@ interface TestimonialProps {
 const Testimonial: React.FC<TestimonialProps> = ({ video, description, highlightWords = [] }) => {
   return (
     <article
-      className="space-y-4 max-w-4xl mx-auto"
+      className="space-y-4 max-w-4xl mx-auto border-2 border-primary rounded-3xl bg-black p-4 sm:p-8"
     >
       <iframe
         src={video}

@@ -19,7 +19,7 @@ const ThankYouPage = () => {
           title="Paso #1 (OBLIGATORIO)
           Mira el siguiente video para confirmar tu llamada"
           highlightWords={['Paso #1']}
-          video='https://www.youtube.com/embed/dQw4w9WgXcQ?si=J6P-xiv3i1vIF9D5'
+          video='https://www.youtube.com/embed/Dx5iDG5BWRI?si=b45uARLOuMCjY-sV'
         />
         <Hero
           isMain={false}
