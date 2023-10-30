@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter, Poppins } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
 import MainNav from '@/components/main-nav'
-import Footer from '@/components/footer'
 import { ThemeProvider } from '@/providers/theme-provider'
 
-const inter = Poppins({ weight: ['400', '700'], subsets: ['latin'] })
+const font = Poppins({ weight: ['400', '700'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Criptokuz',
@@ -20,14 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={`bg-gradient-to-br from-primary/40 to-30% ${inter.className}`}>
+      <body className={`bg-gradient-to-br from-primary/40 to-30% ${font.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
         >
           <MainNav />
           {children}
-          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -3,6 +3,7 @@ import { Metadata } from "next"
 import Faq from "@/components/faq"
 import Hero from "@/components/hero"
 import Testimonials from "@/components/testimonials"
+import FooterBlack from "@/components/footer-black"
 
 export const metadata: Metadata = {
   title: 'Criptokuz | ¡Gracias por aplicar!',
@@ -11,20 +12,23 @@ export const metadata: Metadata = {
 
 const ThankYouPage = () => {
   return (
-    <main
-      className="container my-10"
-    >
-      <Hero
-        isMain={false}
-        title="¡Gracias por aplicar!"
-        highlightWords={['gracias']}
-        video='https://www.youtube.com/embed/dQw4w9WgXcQ?si=J6P-xiv3i1vIF9D5'
-      />
-      <Testimonials
-        isMain={false}
-      />
-      <Faq />
-    </main>
+    <>
+      <main
+        className="container my-10"
+      >
+        <Hero
+          isMain={false}
+          title="¡Gracias por aplicar!"
+          highlightWords={['gracias']}
+          video='https://www.youtube.com/embed/dQw4w9WgXcQ?si=J6P-xiv3i1vIF9D5'
+        />
+        <Testimonials
+          isMain={false}
+        />
+        <Faq />
+      </main>
+      <FooterBlack />
+    </>
   )
 }
 

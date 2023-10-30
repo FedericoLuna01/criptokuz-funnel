@@ -1,44 +1,47 @@
 import Image from "next/image"
 import Heading from "./ui/heading"
-import { Separator } from "./ui/separator"
 import { Button } from "./ui/button"
 
-const images = [230, 200, 300, 400, 500, 600, 700, 800, 900, 260, 234, 654, 234, 645, 465]
+// const images = [230, 200, 300, 400, 500, 600, 700, 800, 900, 260, 234, 654, 234, 645, 465]
+const images = new Array(22).fill(0).map((_, index) => index + 1).filter((item) => item !== 4)
 
 const Gallery = () => {
   return (
     <>
       <section
-        className="container flex flex-col items-center justify-center space-y-6 my-10"
+        className="bg-gradient-to-b from-[#090101] from-60% to-white"
       >
-        <Heading
-          title='Conoce a algunos de nuestos alumnos'
-          highlightWords={['alumnos']}
-        />
         <div
-          className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 space-y-16 gap-10"
+          className="container flex flex-col items-center justify-center space-y-6 py-10"
         >
-          {
-            images.map((image, index) => (
-              <Image
-                key={index}
-                src={`https://picsum.photos/id/${image}/${Math.ceil(image * 1.2)}/${Math.ceil(image + 300 * 1.2)}`}
-                width={350}
-                height={550}
-                alt='random image'
-                className="rounded-sm object-cover"
-              />
-            ))
-          }
+          <Heading
+            title='Más casos de exitos'
+            highlightWords={['exitos']}
+          />
+          <div
+            className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 space-y-16 gap-10"
+          >
+            {
+              images.map((image, index) => (
+                <Image
+                  key={index}
+                  src={`/Screenshot_${image}.png`}
+                  width={350}
+                  height={550}
+                  alt='random image'
+                  className="rounded-sm object-cover"
+                />
+              ))
+            }
+          </div>
+          <Button
+            size='xl'
+            asChild
+          >
+            <a href="#calendly">Quiero aplicar</a>
+          </Button>
         </div>
-        <Button
-          size='xl'
-          asChild
-        >
-          <a href="#calendly">Quiero aplicar</a>
-        </Button>
       </section>
-      <Separator className="container bg-gray-200" />
     </>
   )
 }
