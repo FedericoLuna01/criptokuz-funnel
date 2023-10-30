@@ -27,7 +27,10 @@ export default function Home() {
         title='Mira nuestros casos de éxito'
         highlightWords={['']}
       />
-      <Gallery />
+      <Gallery
+        href='#calendly'
+        label='Quiero aplicar'
+      />
       <Calendly />
     </main>
   )

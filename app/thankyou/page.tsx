@@ -43,7 +43,8 @@ const ThankYouPage = () => {
         />
         <Faq />
         <Gallery
-          isMain={false}
+          href='https://api.whatsapp.com/send?phone=542984674480&text=Hola,%20qu%C3%A9%20tal?%20Agende%20una%20sesi%C3%B3n%20con%20Mauro%20por%20favor '
+          label='Confirmar llamada'
         />
       </main>
     </>

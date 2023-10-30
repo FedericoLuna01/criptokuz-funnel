@@ -5,11 +5,13 @@ import { Button } from "./ui/button"
 const images = new Array(22).fill(0).map((_, index) => index + 1)
 
 interface GalleryProps {
-  isMain?: boolean;
+  href: string;
+  label: string;
 }
 
 const Gallery: React.FC<GalleryProps> = ({
-  isMain = true
+  href,
+  label
 }) => {
   return (
     <>
@@ -39,15 +41,16 @@ const Gallery: React.FC<GalleryProps> = ({
               ))
             }
           </div>
-          {
-            isMain &&
-            <Button
-              size='xl'
-              asChild
+          <Button
+            size='xl'
+            asChild
+          >
+            <a
+              href={href}
             >
-              <a href="#calendly">Quiero aplicar</a>
-            </Button>
-          }
+              {label}
+            </a>
+          </Button>
         </div>
       </section>
     </>
