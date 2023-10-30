@@ -43,7 +43,10 @@ const Hero: React.FC<HeroProps> = ({
             </Button>
         }
       </section>
-      <Separator className="container bg-gray-200" />
+      {
+        isMain &&
+        <Separator className="container bg-gray-200" />
+      }
     </>
   )
 }

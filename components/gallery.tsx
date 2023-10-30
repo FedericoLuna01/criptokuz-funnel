@@ -2,17 +2,22 @@ import Image from "next/image"
 import Heading from "./ui/heading"
 import { Button } from "./ui/button"
 
-// const images = [230, 200, 300, 400, 500, 600, 700, 800, 900, 260, 234, 654, 234, 645, 465]
-const images = new Array(22).fill(0).map((_, index) => index + 1).filter((item) => item !== 4)
+const images = new Array(22).fill(0).map((_, index) => index + 1)
 
-const Gallery = () => {
+interface GalleryProps {
+  isMain?: boolean;
+}
+
+const Gallery: React.FC<GalleryProps> = ({
+  isMain = true
+}) => {
   return (
     <>
       <section
         className="bg-gradient-to-b from-[#090101] from-60% to-white"
       >
         <div
-          className="container flex flex-col items-center justify-center space-y-6 py-10"
+          className="container flex flex-col items-center justify-center space-y-6 py-20"
         >
           <Heading
             title='Más casos de exitos'
@@ -22,24 +27,27 @@ const Gallery = () => {
             className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 space-y-16 gap-10"
           >
             {
-              images.map((image, index) => (
+              images.map((image) => (
                 <Image
-                  key={index}
-                  src={`/Screenshot_${image}.png`}
+                  key={image}
+                  src={`/testimoniales_${image}.PNG`}
                   width={350}
                   height={550}
-                  alt='random image'
+                  alt='Testimonial image'
                   className="rounded-sm object-cover"
                 />
               ))
             }
           </div>
-          <Button
-            size='xl'
-            asChild
-          >
-            <a href="#calendly">Quiero aplicar</a>
-          </Button>
+          {
+            isMain &&
+            <Button
+              size='xl'
+              asChild
+            >
+              <a href="#calendly">Quiero aplicar</a>
+            </Button>
+          }
         </div>
       </section>
     </>

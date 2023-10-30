@@ -11,7 +11,7 @@ const Heading: React.FC<HeadingProps> = ({ title, highlightWords }) => {
       className="text-center max-w-2xl mx-auto space-y-4"
     >
       <h1
-        className="text-4xl sm:text-5xl font-bold"
+        className="text-xl sm:text-3xl font-bold"
       >
         <Highlighter
           highlightStyle={{

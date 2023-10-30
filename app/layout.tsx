@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import './globals.css'
 import MainNav from '@/components/main-nav'
 import { ThemeProvider } from '@/providers/theme-provider'
+import Footer from '@/components/footer'
 
 const font = Poppins({ weight: ['400', '700'], subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         >
           <MainNav />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
