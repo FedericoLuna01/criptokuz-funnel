@@ -24,8 +24,8 @@ export default function Home() {
         isMain={false}
       />
       <Testimonials
-        title='Testimonios'
-        highlightWords={['Testimonios']}
+        title='Mira nuestros casos de éxito'
+        highlightWords={['']}
       />
       <Gallery />
       <Calendly />
