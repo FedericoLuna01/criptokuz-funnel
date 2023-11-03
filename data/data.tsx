@@ -18,6 +18,12 @@ export const TestimonialsItems = [
     video: 'https://www.youtube.com/embed/pdGHuWVKqpQ?si=eQdOtrUzVTekcepb',
     description: 'Tres PILARES que lo hicieron ganar mas de 15.000 USD ',
     highlightWords: ['PILARES', '15.000', 'USD']
+  },
+  {
+    id: 4,
+    video: 'https://www.youtube.com/embed/ct8FB0-b59g?si=vb3-xey6c2JzZiPs',
+    description: 'De CERO a Trader RENTABLE en menos de 90 dias',
+    highlightWords: ['CERO', 'Trader RENTABLE', '90', 'DIAS']
   }
 ]
 
