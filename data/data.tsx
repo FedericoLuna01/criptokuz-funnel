@@ -24,6 +24,12 @@ export const TestimonialsItems = [
     video: 'https://www.youtube.com/embed/ct8FB0-b59g?si=vb3-xey6c2JzZiPs',
     description: 'De CERO a Trader RENTABLE en menos de 90 dias',
     highlightWords: ['CERO', 'Trader RENTABLE', '90', 'DIAS']
+  },
+  {
+    id: 5,
+    video: 'https://www.youtube.com/embed/igPF35OwPc0?si=qr_vazveabscUh0N',
+    description: 'Matias paso de perder dinero a ser rentable a través de HEW',
+    highlightWords: ['rentable', 'HEW']
   }
 ]
 
