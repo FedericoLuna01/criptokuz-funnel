@@ -30,6 +30,12 @@ export const TestimonialsItems = [
     video: 'https://www.youtube.com/embed/igPF35OwPc0?si=qr_vazveabscUh0N',
     description: 'Matias paso de perder dinero a ser rentable a través de HEW',
     highlightWords: ['rentable', 'HEW']
+  },
+  {
+    id: 6,
+    video: 'https://www.youtube.com/embed/Db00vCq1mjk?si=LHIbuIJP8cpz0Emh',
+    description: 'Juan no sabia nada sobre los mercados, ahora es rentable.',
+    highlightWords: ['rentable', 'mercados']
   }
 ]
 
