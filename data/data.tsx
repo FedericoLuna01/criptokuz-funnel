@@ -36,6 +36,12 @@ export const TestimonialsItems = [
     video: 'https://www.youtube.com/embed/Db00vCq1mjk?si=LHIbuIJP8cpz0Emh',
     description: 'Juan no sabia nada sobre los mercados, ahora es rentable.',
     highlightWords: ['rentable', 'mercados']
+  },
+  {
+    id: 7,
+    video: 'https://www.youtube.com/embed/NMusJFvvxgo?si=J7HGLCB1of29jKkQ',
+    description: 'Marcos estuvo a nada de abandonar el trading y ahora es rentable',
+    highlightWords: ['rentable', 'trading']
   }
 ]
 

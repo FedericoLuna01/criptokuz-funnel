@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <main>
       <Hero
-        title='Como ser un Trader Rentable y Consistente en menos de 90 dias'
-        highlightWords={['Trader Rentable', '90 dias']}
-        video='https://www.youtube.com/embed/qOECE3AkOlQ?si=1ma39Jy4YcIn-e4G'
+        title='Como ser un Trader Rentable y Consistente en menos de 90 dias a través de HEW'
+        highlightWords={['Trader Rentable', '90 dias', 'HEW']}
+        video='https://www.youtube.com/embed/pgTWT0zSCko?si=6n3HdKTx6aeR5Jch'
       />
       <Hero
         title='Nuestro proceso para ser rentable en menos de 90 dias'
