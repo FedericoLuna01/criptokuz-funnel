@@ -8,12 +8,6 @@ export const TestimonialsItems = [
     highlightWords: ['ABOGADO', 'TRADER RENTABLE', '90', 'DIAS']
   },
   {
-    id: 2,
-    video: 'https://www.youtube.com/embed/pct3sdSp6uI?si=FZVhM4UabuaMEEq1',
-    description: 'DE 0$ A GANAR MAS DE 1.200$ USD MENSUALES COMO TRADER OPERANDO FOREX',
-    highlightWords: ['0$', '1.200$', 'USD', 'MENSUALES', 'TRADER', 'MERCADO', 'AMERICANO']
-  },
-  {
     id: 3,
     video: 'https://www.youtube.com/embed/pdGHuWVKqpQ?si=eQdOtrUzVTekcepb',
     description: 'Tres PILARES que lo hicieron ganar mas de 15.000 USD ',
