@@ -13,7 +13,7 @@ const Gallery: React.FC<GalleryProps> = ({ href, label }) => {
   return (
     <>
       <section className="bg-gradient-to-b from-[#090101] from-60% to-white">
-        <div className="container flex flex-col items-center justify-center space-y-6 py-20">
+        <div className="container flex flex-col items-center justify-center space-y-6 py-10">
           <Heading title="Más casos de éxitos" highlightWords={["éxitos"]} />
           <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 space-y-16 gap-10">
             {images.map((image) => (

@@ -4,6 +4,7 @@ import Faq from "@/components/faq";
 import Hero from "@/components/hero";
 import Testimonials from "@/components/testimonials";
 import Gallery from "@/components/gallery";
+import VideoTestimonials from "@/components/video-testimonials";
 
 export const metadata: Metadata = {
   title: "Criptokuz | ¡Gracias por aplicar!",
@@ -42,6 +43,7 @@ const ThankYouPage = () => {
           highlightWords={["Paso #4"]}
         />
         <Faq />
+        <VideoTestimonials />
         <Gallery
           href="https://api.whatsapp.com/send?phone=5491140971234&text=Hola,%20qu%C3%A9%20tal?%20Agende%20una%20sesi%C3%B3n%20por%20favor"
           label="Confirmar llamada"

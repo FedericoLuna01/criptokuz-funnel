@@ -40,6 +40,44 @@ export const TestimonialsItems = [
   },
 ];
 
+export const VideosTestimonials = [
+  {
+    id: 1,
+    src: "https://www.youtube.com/embed/qFwHMN6k8hc?si=MT0vgGDw1YuJXWXI",
+    description: "Julieta dejo su trabajo ahora es rentable",
+  },
+  {
+    id: 2,
+    src: "https://www.youtube.com/embed/OXWB1IESVYA?si=zhJPzJKR7g5G3W43",
+    description: "Leonardo no tenía setup",
+  },
+  {
+    id: 3,
+    src: "https://www.youtube.com/embed/5AFiCrJ4zSw?si=M8HebmrMk152lDQY",
+    description: "Jhonatan ahora tiene claridad absoluta",
+  },
+  {
+    id: 4,
+    src: "https://www.youtube.com/embed/UjrkkYjNWxg?si=8Gr1K9ir2DMjzIVO",
+    description: "Fui papa durante el programa y ahora soy rentable",
+  },
+  {
+    id: 5,
+    src: "https://www.youtube.com/embed/m6TGEHhN698?si=NbOeRFfdPKYTBIO0",
+    description: "Estaba sin rumbo y ahora vivo de esto",
+  },
+  {
+    id: 6,
+    src: "https://www.youtube.com/embed/tZyXPLZBmrM?si=F6dZZE2pFVWJEwEZ",
+    description: "Ahora opero con fundamentos reales",
+  },
+  {
+    id: 7,
+    src: "https://www.youtube.com/embed/4_Jvkxo9rIA?si=dctiXYpVCDZBGuqd",
+    description: "Es un Antes y un Después",
+  },
+];
+
 export const FaqItems = [
   {
     id: 1,
