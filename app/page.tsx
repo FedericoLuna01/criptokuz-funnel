@@ -14,14 +14,8 @@ export default function Home() {
       />
       <Hero
         title="Nuestro proceso para ser rentable en menos de 90 dias"
-        video="https://www.youtube.com/embed/htvXBn3_kuA?si=VnyL3PR-sTFOHGC8"
+        video="https://www.youtube.com/embed/nFq_bqfgx9A?si=7G7dvWQHfvy2oZXM"
         highlightWords={["rentable", "90 dias"]}
-        isMain={false}
-      />
-      <Hero
-        title="Mis rendimientos en 30 dias operando"
-        video="https://www.youtube.com/embed/Fnx8-jEAYMM?si=AQ80Bvnaulwz6XkX"
-        highlightWords={["30 dias"]}
         isMain={false}
       />
       <Testimonials

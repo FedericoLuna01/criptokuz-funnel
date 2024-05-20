@@ -33,7 +33,7 @@ const ThankYouPage = () => {
           isMain={false}
           title="Paso #3 (OBLIGATORIO)
           Nuestro proceso para ser rentable en menos de 90 dias"
-          video="https://www.youtube.com/embed/htvXBn3_kuA?si=VnyL3PR-sTFOHGC8"
+          video="https://www.youtube.com/embed/nFq_bqfgx9A?si=7G7dvWQHfvy2oZXM"
           highlightWords={["Paso #3", "rentable", "90 dias"]}
         />
         <Testimonials
