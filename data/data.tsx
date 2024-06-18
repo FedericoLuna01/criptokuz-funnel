@@ -3,38 +3,37 @@ import { Instagram, Youtube } from "lucide-react";
 export const TestimonialsItems = [
   {
     id: 1,
-    video: "https://www.youtube.com/embed/Ll9wtNyKdJU?si=OjDUpPdYNk4eTbX3",
+    video: "https://player.vimeo.com/video/961488529?h=49136f6c09&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "De trabajar como ABOGADO a ser TRADER RENTABLE ",
     highlightWords: ["ABOGADO", "TRADER RENTABLE", "90", "DIAS"],
   },
   {
     id: 2,
-    video: "https://www.youtube.com/embed/DhP_36k0pCg?si=jgeRXTZaXYexO9tA",
+    video: "https://player.vimeo.com/video/961487644?h=16e3e4e9b5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Despues de 4 años intentándolo ahora es RENTABLE",
     highlightWords: ["4 años", "RENTABLE"],
   },
   {
     id: 3,
-    video: "https://www.youtube.com/embed/ct8FB0-b59g?si=vb3-xey6c2JzZiPs",
+    video: "https://player.vimeo.com/video/961487420?h=c573450c7d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "De CERO a Trader RENTABLE en menos de 90 dias",
     highlightWords: ["CERO", "Trader RENTABLE", "90", "DIAS"],
   },
   {
     id: 6,
-    video: "https://www.youtube.com/embed/NMusJFvvxgo?si=J7HGLCB1of29jKkQ",
-    description:
-      "Marcos estuvo a nada de abandonar el trading y ahora es rentable",
+    video: "https://player.vimeo.com/video/961488017?h=a7a0d0f8f1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Marcos estuvo a nada de abandonar el trading y ahora es rentable",
     highlightWords: ["rentable", "trading"],
   },
   {
     id: 4,
-    video: "https://www.youtube.com/embed/hNG4eRFwu6Y?si=23H6WmBu7SHt2P2L",
+    video: "https://player.vimeo.com/video/961486598?h=9432c6e966&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Abandono su trabajo en el banco para volverse RENTABLE",
     highlightWords: ["rentable", "TRABAJO"],
   },
   {
     id: 5,
-    video: "https://www.youtube.com/embed/Db00vCq1mjk?si=LHIbuIJP8cpz0Emh",
+    video: "https://player.vimeo.com/video/961487420?h=c573450c7d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Juan no sabia nada sobre los mercados, ahora es rentable.",
     highlightWords: ["rentable", "mercados"],
   },
