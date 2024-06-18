@@ -1,30 +1,31 @@
 import Calendly from "@/components/calendly";
-import Gallery from "@/components/gallery";
 import Hero from "@/components/hero";
 import Testimonials from "@/components/testimonials";
 import VideoTestimonials from "@/components/video-testimonials";
 
 export default function Home() {
   return (
-    <main>
+    <main className="space-y-16">
       <Hero
-        title="Como ser un Trader Rentable y Consistente en menos de 90 dias a través de HEW"
-        highlightWords={["Trader Rentable", "90 dias", "HEW"]}
-        video="https://www.youtube.com/embed/pgTWT0zSCko?si=6n3HdKTx6aeR5Jch"
+        title="Traders/Operadores de mercados, estas a un paso de tener la habilidad de poder ser rentable y vivir del mercado GARANTIZADO"
+        video="https://player.vimeo.com/video/958724118?h=accff79db4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        highlightWords={["mercados", "habilidad", "rentable", "vivir", "garantizado"]}
+        steps
       />
       <Hero
         title="Nuestro proceso para ser rentable en menos de 90 dias"
-        video="https://www.youtube.com/embed/nFq_bqfgx9A?si=7G7dvWQHfvy2oZXM"
+        video="https://player.vimeo.com/video/958728289?h=2dca979dc9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         highlightWords={["rentable", "90 dias"]}
         isMain={false}
+        steps
+        stepNumber="2"
       />
+      <Calendly />
       <Testimonials
         title="Mira nuestros casos de éxito"
         highlightWords={[""]}
       />
       <VideoTestimonials />
-      <Gallery href="#calendly" label="Quiero aplicar" />
-      <Calendly />
     </main>
   );
 }

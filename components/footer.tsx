@@ -1,20 +1,18 @@
 import Logo from "./ui/logo"
 
 const Footer = () => {
+  const date = new Date().getFullYear()
   return (
-    <footer
-      className="bg-white"
-    >
+    <footer>
       <div
-        className="container text-center md:text-left py-4 flex flex-col md:flex-row items-center justify-between border-t border-gray-200 min-h-20"
+        className="container text-center md:text-left py-4 flex flex-col md:flex-row items-center justify-between border-t border-border min-h-20"
       >
         <Logo
-          color='black'
         />
         <p
           className="text-sm text-gray-500 mt-4 md:mt-0"
         >
-          Copyright &copy; 2023 Criptokuz | Todos los derechos reservados | Diseño y desarrollo{' '}
+          Copyright &copy; {date} Criptokuz | Todos los derechos reservados | Diseño y desarrollo{' '}
           <a
             target="_blank"
             href="https://www.cuppypaginasweb.com/"

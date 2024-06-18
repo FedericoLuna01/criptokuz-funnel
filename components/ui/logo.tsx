@@ -1,10 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-const Logo = ({
-  color = 'white'
-}) => {
-  const logoColor = color === 'white' ? 'invert(0)' : 'invert(1)'
+const Logo = () => {
   return (
     <Link
       href="/"
@@ -14,9 +11,6 @@ const Logo = ({
         width={60}
         height={60}
         alt='Criptokuz logo'
-        style={{
-          filter: `${logoColor}`
-        }}
       />
     </Link>
   )

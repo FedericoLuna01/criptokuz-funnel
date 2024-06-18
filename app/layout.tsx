@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import MainNav from "@/components/main-nav";
 import { ThemeProvider } from "@/providers/theme-provider";
 import Footer from "@/components/footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -27,7 +26,6 @@ export default function RootLayout({
       >
         <GoogleAnalytics gaId="G-CP8EM9GKEQ" />
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <MainNav />
           {children}
           <Footer />
         </ThemeProvider>

@@ -25,7 +25,7 @@ const Testimonials: React.FC<TestimonialProps> = ({
           highlightWords={highlightWords}
         />
         <div
-          className="space-y-20"
+          className="grid grid-cols-1 xl:grid-cols-2 gap-x-20 gap-y-10"
         >
           {
             TestimonialsItems.map(({ id, video, description, highlightWords }) => (

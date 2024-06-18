@@ -7,13 +7,17 @@ interface HeroProps {
   highlightWords: string[];
   video: string;
   isMain?: boolean;
+  steps?: boolean;
+  stepNumber?: string;
 }
 
 const Hero: React.FC<HeroProps> = ({
   title,
   highlightWords,
   video,
-  isMain = true
+  isMain = true,
+  steps = false,
+  stepNumber = "1"
 }) => {
   return (
     <>
@@ -24,6 +28,17 @@ const Hero: React.FC<HeroProps> = ({
           title={title}
           highlightWords={highlightWords}
         />
+        {
+          steps && (
+            <div>
+              <Separator className="bg-white max-w-3xl mb-4" />
+              <Heading
+                title={`Paso ${stepNumber} de 3: Mira el siguiente video`}
+                highlightWords={['Paso', "de", "1", "3", "2", 'video']}
+              />
+            </div>
+          )
+        }
         <iframe
           src={video}
           title="YouTube video player"
@@ -43,10 +58,6 @@ const Hero: React.FC<HeroProps> = ({
             </Button>
         }
       </section>
-      {
-        isMain &&
-        <Separator className="container bg-gray-200" />
-      }
     </>
   )
 }
