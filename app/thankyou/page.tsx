@@ -9,6 +9,20 @@ import VideoTestimonials from "@/components/video-testimonials";
 export const metadata: Metadata = {
   title: "Criptokuz | ¡Gracias por aplicar!",
   description: "Muchas gracias por aplicar a la mentoría de CriptoKuz.",
+  openGraph: {
+    title: "Criptokuz | ¡Gracias por aplicar!",
+    description: "Muchas gracias por aplicar a la mentoría de CriptoKuz.",
+    type: "website",
+    url: "https://criptokuz.com/thankyou",
+    images: [
+      {
+        url: "./logo.png",
+        width: 800,
+        height: 600,
+        alt: "Criptokuz | ¡Gracias por aplicar!",
+      },
+    ]
+  },
 };
 
 const ThankYouPage = () => {
