@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     url: "https://criptokuz.com/thankyou",
     images: [
       {
-        url: "./logo.png",
+        url: "./og-image-thankyou.jpg",
         width: 800,
-        height: 600,
+        height: 450,
         alt: "Criptokuz | ¡Gracias por aplicar!",
       },
     ]
