@@ -41,7 +41,7 @@ const ThankYouPage = () => {
           title="Paso #2 (OBLIGATORIO)
           Mira el entrenamiento de cómo convertirte en trader en 2024"
           highlightWords={["Paso #2"]}
-          video="https://www.youtube.com/embed/pgTWT0zSCko?si=6n3HdKTx6aeR5Jch"
+          video="https://player.vimeo.com/video/958724118?h=accff79db4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         />
         <Hero
           isMain={false}
