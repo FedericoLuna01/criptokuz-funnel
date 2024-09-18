@@ -37,6 +37,18 @@ export const TestimonialsItems = [
     description: "Juan no sabia nada sobre los mercados, ahora es rentable.",
     highlightWords: ["rentable", "mercados"],
   },
+  {
+    id: 6,
+    video: "https://player.vimeo.com/video/1010740327?h=edb4254d07&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Ahora tengo un setup operativo y soy rentable gracias a ello",
+    highlightWords: ["setup", "rentable"],
+  },
+  {
+    id: 7,
+    video: "https://player.vimeo.com/video/1010740186?h=c4944e779e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Le fue mal con señales y decidió educarse",
+    highlightWords: ["señales", "educarse"],
+  }
 ];
 
 export const VideosTestimonials = [
