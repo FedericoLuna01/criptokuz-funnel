@@ -33,7 +33,7 @@ export const TestimonialsItems = [
   },
   {
     id: 5,
-    video: "https://player.vimeo.com/video/961487420?h=c573450c7d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    video: "https://player.vimeo.com/video/961488329?h=fa8a062e9d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Juan no sabia nada sobre los mercados, ahora es rentable.",
     highlightWords: ["rentable", "mercados"],
   },
