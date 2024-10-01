@@ -48,6 +48,12 @@ export const TestimonialsItems = [
     video: "https://player.vimeo.com/video/1010740186?h=c4944e779e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Le fue mal con señales y decidió educarse",
     highlightWords: ["señales", "educarse"],
+  },
+  {
+    id: 8,
+    video: "https://player.vimeo.com/video/1014592461?h=a5668a0b37&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Logre ser rentable siendo arquitecto y padre de una bebe de 6 meses.",
+    highlightWords: ["rentable", "arquitecto", "padre", "bebe"],
   }
 ];
 

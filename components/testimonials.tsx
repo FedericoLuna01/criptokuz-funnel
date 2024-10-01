@@ -34,6 +34,7 @@ const Testimonials: React.FC<TestimonialProps> = ({
                 video={video}
                 description={description}
                 highlightWords={highlightWords}
+                isLast={id === 8}
               />
             ))
           }
@@ -58,7 +59,7 @@ const Testimonials: React.FC<TestimonialProps> = ({
               <p
                 className="text-2xl text-gray-400"
               >
-                  Si no viste los videos anteriores, no podremos tener la llamada
+                Si no viste los videos anteriores, no podremos tener la llamada
               </p>
             </div>
         }

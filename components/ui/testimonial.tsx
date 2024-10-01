@@ -1,15 +1,17 @@
+import { cn } from "@/lib/utils";
 import Highlighter from "react-highlight-words";
 
 interface TestimonialProps {
   video: string
   description: string
   highlightWords?: string[];
+  isLast?: boolean
 }
 
-const Testimonial: React.FC<TestimonialProps> = ({ video, description, highlightWords = [] }) => {
+const Testimonial: React.FC<TestimonialProps> = ({ video, description, highlightWords = [], isLast = false }) => {
   return (
     <article
-      className="space-y-4 max-w-4xl mx-auto border-2 border-primary rounded-3xl bg-black p-4 sm:p-8"
+      className={cn("space-y-4 max-w-2xl w-full mx-auto border-2 border-primary rounded-3xl bg-black p-4 sm:p-8", isLast ? "col-span-1 xl:col-span-2" : "")}
     >
       <iframe
         src={video}
