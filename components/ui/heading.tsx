@@ -7,7 +7,7 @@ export interface HeadingProps {
 
 const Heading: React.FC<HeadingProps> = ({ title, highlightWords }) => {
   return (
-    <div className="text-center max-w-2xl mx-auto space-y-4">
+    <div className="text-center max-w-5xl mx-auto space-y-4">
       <h1 className="text-2xl sm:text-3xl font-bold">
         <Highlighter
           highlightStyle={{

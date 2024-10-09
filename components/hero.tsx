@@ -9,6 +9,7 @@ interface HeroProps {
   isMain?: boolean;
   steps?: boolean;
   stepNumber?: string;
+  subtitle?: string
 }
 
 const Hero: React.FC<HeroProps> = ({
@@ -17,7 +18,8 @@ const Hero: React.FC<HeroProps> = ({
   video,
   isMain = true,
   steps = false,
-  stepNumber = "1"
+  stepNumber = "1",
+  subtitle
 }) => {
   return (
     <>
@@ -28,6 +30,13 @@ const Hero: React.FC<HeroProps> = ({
           title={title}
           highlightWords={highlightWords}
         />
+        {
+          subtitle && (
+            <p className="max-w-3xl text-center text-xl text-zinc-200">
+              {subtitle}
+            </p>
+          )
+        }
         {
           steps && (
             <div>
@@ -50,12 +59,12 @@ const Hero: React.FC<HeroProps> = ({
         {
           // true === está en la página principal. De lo contrario thankspage
           isMain &&
-            <Button
-              size='xl'
-              asChild
-            >
-              <a href="#calendly">Quiero aplicar</a>
-            </Button>
+          <Button
+            size='xl'
+            asChild
+          >
+            <a href="#calendly">Quiero aplicar</a>
+          </Button>
         }
       </section>
     </>
