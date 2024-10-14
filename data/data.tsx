@@ -54,6 +54,12 @@ export const TestimonialsItems = [
     video: "https://player.vimeo.com/video/1014592461?h=a5668a0b37&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Logre ser rentable siendo arquitecto y padre de una bebe de 6 meses.",
     highlightWords: ["rentable", "arquitecto", "padre", "bebe"],
+  },
+  {
+    id: 9,
+    video: "https://player.vimeo.com/video/1019275019?h=8dad734c10&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Soy Ingeniero y perdi 9.000 USD antes de llegar a ser rentable",
+    highlightWords: ["Ingeniero", "9.000 USD", "rentable"],
   }
 ];
 

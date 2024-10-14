@@ -34,7 +34,8 @@ const Testimonials: React.FC<TestimonialProps> = ({
                 video={video}
                 description={description}
                 highlightWords={highlightWords}
-                isLast={id === 8}
+              // Cambiar la id si es numero impar
+              // isLast={id === 8}
               />
             ))
           }
