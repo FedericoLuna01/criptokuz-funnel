@@ -60,6 +60,12 @@ export const TestimonialsItems = [
     video: "https://player.vimeo.com/video/1019275019?h=8dad734c10&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Soy Ingeniero y perdi 9.000 USD antes de llegar a ser rentable",
     highlightWords: ["Ingeniero", "9.000 USD", "rentable"],
+  },
+  {
+    id: 10,
+    video: "https://player.vimeo.com/video/1020723823?h=f6d48fc749&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Perdi $60.000 USD antes de tomar la mentoria",
+    highlightWords: ["$60.000 USD", "mentoria"],
   }
 ];
 

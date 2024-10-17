@@ -28,16 +28,19 @@ const Testimonials: React.FC<TestimonialProps> = ({
           className="grid grid-cols-1 xl:grid-cols-2 gap-x-20 gap-y-10"
         >
           {
-            TestimonialsItems.map(({ id, video, description, highlightWords }) => (
-              <Testimonial
-                key={id}
-                video={video}
-                description={description}
-                highlightWords={highlightWords}
-              // Cambiar la id si es numero impar
-              // isLast={id === 8}
-              />
-            ))
+            TestimonialsItems.map(({ id, video, description, highlightWords }, index) => {
+              const isLast = TestimonialsItems.length === index + 1
+              return (
+                <Testimonial
+                  key={id}
+                  video={video}
+                  description={description}
+                  highlightWords={highlightWords}
+                  isLast={isLast}
+                />
+              )
+
+            })
           }
         </div>
         {
