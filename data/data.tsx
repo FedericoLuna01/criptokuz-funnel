@@ -66,6 +66,12 @@ export const TestimonialsItems = [
     video: "https://player.vimeo.com/video/1020723823?h=f6d48fc749&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Perdi $60.000 USD antes de tomar la mentoria",
     highlightWords: ["$60.000 USD", "mentoria"],
+  },
+  {
+    id: 11,
+    video: "https://player.vimeo.com/video/1021566781?h=215b8c9a4c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Intentaba ser rentable pero usaba la metodología incorrecta",
+    highlightWords: ["rentable", "metodología"],
   }
 ];
 

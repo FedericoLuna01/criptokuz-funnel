@@ -30,13 +30,14 @@ const Testimonials: React.FC<TestimonialProps> = ({
           {
             TestimonialsItems.map(({ id, video, description, highlightWords }, index) => {
               const isLast = TestimonialsItems.length === index + 1
+              const isOdd = TestimonialsItems.length % 2 !== 0
               return (
                 <Testimonial
                   key={id}
                   video={video}
                   description={description}
                   highlightWords={highlightWords}
-                  isLast={isLast}
+                  isLast={isLast && isOdd}
                 />
               )
 
