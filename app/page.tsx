@@ -8,7 +8,7 @@ export default function Home() {
     <main className="space-y-16">
       <Hero
         title="Traders de mercados, estas a un paso de entender como puede ser rentable y vivir de los mercados GARANTIZADO"
-        video="https://player.vimeo.com/video/958724118?h=accff79db4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        video="https://player.vimeo.com/video/1028229172?h=303fcf7d1f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         subtitle="La mejor parte es que si no sos rentable, te devolvemos cada dolar que nos pagaste garantizado por contrato"
         highlightWords={["mercados", "habilidad", "rentable", "vivir", "garantizado"]}
         steps
