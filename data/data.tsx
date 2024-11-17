@@ -72,6 +72,12 @@ export const TestimonialsItems = [
     video: "https://player.vimeo.com/video/1021566781?h=215b8c9a4c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Intentaba ser rentable pero usaba la metodología incorrecta",
     highlightWords: ["rentable", "metodología"],
+  },
+  {
+    id: 12,
+    video: "https://player.vimeo.com/video/1030361997?h=d190bc0bba&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Me dijeron que en 4 años iba a ser rentable, lo logre en 3 meses.",
+    highlightWords: ["rentable", "3 meses"],
   }
 ];
 
