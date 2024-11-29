@@ -42,7 +42,7 @@ const Hero: React.FC<HeroProps> = ({
             <div>
               <Separator className="bg-white max-w-3xl mb-4" />
               <Heading
-                title={`Paso ${stepNumber} de 3: Mira el siguiente video`}
+                title={`Paso ${stepNumber} de 2: Mira el siguiente video`}
                 highlightWords={['Paso', "de", "1", "3", "2", 'video']}
               />
             </div>

@@ -7,8 +7,8 @@ const Calendly = () => {
       <section className="flex items-center mx-auto flex-col" >
         <div>
           <Heading
-            title={`Paso 3 de 3: Agendá tu llamada`}
-            highlightWords={['Paso 3 de 3', 'llamada']}
+            title={`Paso 2 de 2: Agendá tu llamada`}
+            highlightWords={['Paso 2 de 2', 'llamada']}
           />
         </div>
         <div className="container h-full rounded-lg" id="calendly">

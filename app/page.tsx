@@ -13,14 +13,14 @@ export default function Home() {
         highlightWords={["mercados", "habilidad", "rentable", "vivir", "garantizado"]}
         steps
       />
-      <Hero
+      {/* <Hero
         title="Nuestro proceso para ser rentable en menos de 90 dias"
         video="https://player.vimeo.com/video/958728289?h=2dca979dc9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         highlightWords={["rentable", "90 dias"]}
         isMain={false}
         steps
         stepNumber="2"
-      />
+      /> */}
       <Calendly />
       <Testimonials
         title="Mira nuestros casos de éxito"
