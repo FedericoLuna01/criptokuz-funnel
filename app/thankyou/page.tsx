@@ -30,7 +30,7 @@ const ThankYouPage = () => {
     <>
       <main>
         <Hero
-          isMain={false}
+          isMain={true}
           title="Paso #1 (OBLIGATORIO)
           Mira el siguiente video para confirmar tu llamada"
           highlightWords={["Paso #1"]}
@@ -39,22 +39,15 @@ const ThankYouPage = () => {
         <Hero
           isMain={false}
           title="Paso #2 (OBLIGATORIO)
-          Mira el entrenamiento de cómo convertirte en trader en 2024"
-          highlightWords={["Paso #2"]}
-          video="https://player.vimeo.com/video/1028229172?h=303fcf7d1f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-        />
-        <Hero
-          isMain={false}
-          title="Paso #3 (OBLIGATORIO)
           Nuestro proceso para ser rentable en menos de 90 dias"
           video="https://player.vimeo.com/video/958728289?h=2dca979dc9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          highlightWords={["Paso #3", "rentable", "90 dias"]}
+          highlightWords={["Paso #2", "rentable", "90 dias"]}
         />
         <Testimonials
           isMain={false}
-          title="Paso #4 (OBLIGATORIO)
+          title="Paso #3 (OBLIGATORIO)
           Mira nuestros casos de éxito de CriptoKuz"
-          highlightWords={["Paso #4"]}
+          highlightWords={["Paso #3"]}
         />
         <Faq />
         <VideoTestimonials />
