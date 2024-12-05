@@ -4,20 +4,20 @@ export const TestimonialsItems = [
   {
     id: 1,
     video: "https://player.vimeo.com/video/961488529?h=49136f6c09&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "De trabajar como ABOGADO a ser TRADER RENTABLE ",
-    highlightWords: ["ABOGADO", "TRADER RENTABLE", "90", "DIAS"],
+    description: "De trabajar como abogado a ser un trader profesional gracias a HEW",
+    highlightWords: ["ABOGADO", "profesional", "HEW"],
   },
   {
     id: 2,
     video: "https://player.vimeo.com/video/961487644?h=16e3e4e9b5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "Despues de 4 años intentándolo ahora es RENTABLE",
-    highlightWords: ["4 años", "RENTABLE"],
+    description: "4 años intentando ser rentable, y en 3 meses gracias a HEW lo logro",
+    highlightWords: ["4 años", "RENTABLE", "HEW", "3 meses"],
   },
   {
     id: 3,
     video: "https://player.vimeo.com/video/961487420?h=c573450c7d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "De CERO a Trader RENTABLE en menos de 90 dias",
-    highlightWords: ["CERO", "Trader RENTABLE", "90", "DIAS"],
+    description: "Paso de no tener un setup, a poder ganar dinero con los mercados en solo 3 meses",
+    highlightWords: ["setup", "dinero", "mercados", "3 meses"],
   },
   {
     id: 6,
@@ -28,14 +28,14 @@ export const TestimonialsItems = [
   {
     id: 4,
     video: "https://player.vimeo.com/video/961486598?h=9432c6e966&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "Abandono su trabajo en el banco para volverse RENTABLE",
-    highlightWords: ["rentable", "TRABAJO"],
+    description: "Dejo su trabajo en el banco, para dedicarse plenamente al trading y gracias a HEW lo logro",
+    highlightWords: ["banco", "trading", "HEW"],
   },
   {
     id: 5,
     video: "https://player.vimeo.com/video/961488329?h=fa8a062e9d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "Juan no sabia nada sobre los mercados, ahora es rentable.",
-    highlightWords: ["rentable", "mercados"],
+    description: "Juan no conocía los mercados, en 3 meses alcanzo un win rate del 70%",
+    highlightWords: ["mercados", "3 meses", "win rate", "70%"],
   },
   {
     id: 6,
@@ -46,8 +46,8 @@ export const TestimonialsItems = [
   {
     id: 7,
     video: "https://player.vimeo.com/video/1010740186?h=c4944e779e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "Le fue mal con señales y decidió educarse",
-    highlightWords: ["señales", "educarse"],
+    description: "Intento ser rentable pagando cursos, y logro la rentabilidad recien trabajando con nosotros",
+    highlightWords: ["rentable", "cursos", "rentabilidad"],
   },
   {
     id: 8,
@@ -58,7 +58,7 @@ export const TestimonialsItems = [
   {
     id: 9,
     video: "https://player.vimeo.com/video/1019275019?h=8dad734c10&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "Soy Ingeniero y perdi 9.000 USD antes de llegar a ser rentable",
+    description: "Soy Ingeniero y perdi 9.000 USD antes de llegar a ser rentable",
     highlightWords: ["Ingeniero", "9.000 USD", "rentable"],
   },
   {
@@ -76,8 +76,8 @@ export const TestimonialsItems = [
   {
     id: 12,
     video: "https://player.vimeo.com/video/1030361997?h=d190bc0bba&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "Me dijeron que en 4 años iba a ser rentable, lo logre en 3 meses.",
-    highlightWords: ["rentable", "3 meses"],
+    description: "Me dijeron que en 4 años iba a ser rentable, lo logre en 3 meses gracias a la mentoria",
+    highlightWords: ["4 años", "rentable", "3 meses", "mentoria"],
   }
 ];
 
