@@ -35,7 +35,7 @@ const ThankYouPage = () => {
           title="Paso #1 (OBLIGATORIO)
           Mira el siguiente video para confirmar tu llamada"
           highlightWords={["Paso #1"]}
-          video="https://player.vimeo.com/video/1031357061?h=b682d28f90&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          video="https://player.vimeo.com/video/1036551613?h=e65bbb5409&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         />
         <Button size="xl" asChild>
           <a href="https://api.whatsapp.com/send?phone=5491140971234&text=Hola,%20qu%C3%A9%20tal?%20Agende%20una%20sesi%C3%B3n%20por%20favor" target="_blank">
