@@ -78,6 +78,12 @@ export const TestimonialsItems = [
     video: "https://player.vimeo.com/video/1030361997?h=d190bc0bba&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Me dijeron que en 4 años iba a ser rentable, lo logre en 3 meses gracias a la mentoria",
     highlightWords: ["4 años", "rentable", "3 meses", "mentoria"],
+  },
+  {
+    id: 13,
+    video: "https://player.vimeo.com/video/1037096754?h=aaa22d2dfb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Casi me fundo intentado ser rentable siendo auto-didacta, y gracias a HEW hoy dia soy rentable",
+    highlightWords: ["rentable", "auto-didacta", "HEW"],
   }
 ];
 
