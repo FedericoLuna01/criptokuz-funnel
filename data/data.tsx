@@ -84,6 +84,18 @@ export const TestimonialsItems = [
     video: "https://player.vimeo.com/video/1037096754?h=aaa22d2dfb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Casi me fundo intentado ser rentable siendo auto-didacta, y gracias a HEW hoy dia soy rentable",
     highlightWords: ["rentable", "auto-didacta", "HEW"],
+  },
+  {
+    id: 14,
+    video: "https://player.vimeo.com/video/1055450907?h=f91ce1d000&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "De trader frustrado a rentable: El setup escalable que lo cambió todo",
+    highlightWords: ["frustrado", "rentable", "setup escalable"],
+  },
+  {
+    id: 15,
+    video: "https://player.vimeo.com/video/1055451273?h=c7d063e4e3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "De $5,000 a $80,000 con esta estrategia de trading poco conocida",
+    highlightWords: ["$5,000", "$80,000", "estrategia", "trading"],
   }
 ];
 
