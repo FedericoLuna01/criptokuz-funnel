@@ -1,22 +1,48 @@
 import { FaqItems } from "@/data/data";
-import FaqItem from "./faq-item";
 import Heading from "./ui/heading";
-import { Separator } from "./ui/separator";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
 
-const Faq = ({}) => {
+const Faq = ({ }) => {
   return (
-    <>
-      <section className="container my-10 space-y-6">
+    <section className="py-10 border-t border-[#2d2d2d]"
+      style={{
+        backgroundImage: "radial-gradient(at center center,#111 0%,#0a0a0a 69%)"
+      }}
+    >
+      <div className="container space-y-6">
         <Heading
           title="Preguntas frecuentes"
-          highlightWords={["preguntas", "frecuentes"]}
+          highlightWords={["preguntas frecuentes"]}
         />
-        {FaqItems.map(({ question, answer, id }) => (
-          <FaqItem key={id} question={question} answer={answer} />
-        ))}
-      </section>
-      <Separator className="container bg-gray-200" />
-    </>
+        <Accordion
+          type="single"
+          collapsible
+          className="max-w-3xl mx-auto space-y-3"
+        >
+          {
+            FaqItems.map(({ question, answer, id }) => (
+              <AccordionItem
+                key={id}
+                value={`item-${id}`}
+                className="border-[1px] border-[#2d3740] rounded-lg"
+              >
+                <AccordionTrigger
+                  className=" font-bold border-[#2d3740] rounded-lg px-6 text-left hover:text-[#0faab6] data-[state=open]:rounded-b-none  data-[state=open]:border-b  data-[state=open]:text-[#0faab6]"
+                  style={{ background: 'linear-gradient(283deg,#FFFFFF1A 0%,#FFFFFF12 100%)' }}
+                >
+                  {question}
+                </AccordionTrigger>
+                <AccordionContent
+                  className="bg-black px-6 py-4 rounded-lg text-[1.1em] text-[#c7c7c7]"
+                >
+                  {answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))
+          }
+        </Accordion>
+      </div>
+    </section>
   );
 };
 

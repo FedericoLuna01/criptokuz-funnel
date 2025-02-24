@@ -1,8 +1,8 @@
 import { TestimonialsItems } from "@/data/data";
 import { Button } from "./ui/button"
-import { Separator } from "./ui/separator"
 import Testimonial from "./ui/testimonial"
 import Heading from "./ui/heading";
+import Badge from "./ui/badge";
 
 interface TestimonialProps {
   isMain?: boolean;
@@ -16,16 +16,19 @@ const Testimonials: React.FC<TestimonialProps> = ({
   highlightWords
 }) => {
   return (
-    <>
-      <section
-        className="container flex flex-col items-center justify-center space-y-6 my-20"
-      >
+    <section
+      className="py-10 border-t border-[#2d2d2d] bg-[#111]"
+    >
+      <div className="container flex flex-col items-center justify-center space-y-6">
+        <Badge
+          text="Estos son algunos de los traders que han pasado por nuestro programa"
+        />
         <Heading
           title={title}
           highlightWords={highlightWords}
         />
         <div
-          className="grid grid-cols-1 xl:grid-cols-2 gap-x-20 gap-y-10"
+          className="grid grid-cols-1 xl:grid-cols-3 gap-x-10 gap-y-5 md:gap-y-10"
         >
           {
             TestimonialsItems.map(({ id, video, description, highlightWords }, index) => {
@@ -68,9 +71,8 @@ const Testimonials: React.FC<TestimonialProps> = ({
               </p>
             </div>
         }
-      </section>
-      <Separator className="container bg-gray-200" />
-    </>
+      </div>
+    </section>
   )
 }
 

@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Highlighter from "react-highlight-words";
+import Highlighter from "../highlighter";
 
 interface TestimonialProps {
   video: string
@@ -11,7 +11,7 @@ interface TestimonialProps {
 const Testimonial: React.FC<TestimonialProps> = ({ video, description, highlightWords = [], isLast = false }) => {
   return (
     <article
-      className={cn("space-y-4 max-w-2xl w-full mx-auto border-2 border-primary rounded-3xl bg-black p-4 sm:p-8", isLast ? "col-span-1 xl:col-span-2" : "")}
+      className={cn("space-y-4 max-w-2xl w-full mx-auto p-3 bg-[#FFFFFF12] border-[1px] border-[#444d55] rounded-lg bg-black", isLast ? "col-span-1 xl:col-span-2" : "")}
     >
       <iframe
         src={video}
@@ -20,19 +20,14 @@ const Testimonial: React.FC<TestimonialProps> = ({ video, description, highlight
         allowFullScreen
         className="rounded-lg w-full aspect-video"
       ></iframe>
-      <p
-        className='text-xl sm:text-2xl font-semibold'
+      <div
+        className='text-xl font-semibold'
       >
         <Highlighter
-          highlightStyle={{
-            color: 'hsl(var(--primary))',
-            backgroundColor: 'transparent',
-          }}
-          searchWords={highlightWords}
-          autoEscape={true}
-          textToHighlight={description}
+          wordsToHighlight={highlightWords}
+          text={description}
         />
-      </p>
+      </div>
     </article>
   )
 }

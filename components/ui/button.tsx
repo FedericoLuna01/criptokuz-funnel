@@ -24,7 +24,7 @@ const buttonVariants = cva(
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
-        xl: "text-xl md:text-2xl font-semibold py-3 md:py-6 px-20 md:px-32 bg-gradient-to-r from-cyan-200 from-20% to-cyan-500 hover:opacity-90"
+        xl: "text-xl font-semibold py-4 px-10 md:px-20 bg-[#479ea5] shadow-custom border-[1px] border-[#8ff0f6] text-white uppercase hover:shadow-none hover:bg-[#25878f] transition-all duration-300",
       },
     },
     defaultVariants: {
@@ -36,7 +36,7 @@ const buttonVariants = cva(
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+  VariantProps<typeof buttonVariants> {
   asChild?: boolean
 }
 

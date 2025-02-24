@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import Footer from "@/components/footer";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Header from "@/components/header";
 
 const font = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
 
@@ -22,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`dark bg-gradient-to-br from-primary/40 to-30% ${font.className}`}
+        className={`dark ${font.className}`}
       >
-        <GoogleAnalytics gaId="G-CP8EM9GKEQ" />
         <ThemeProvider attribute="class" defaultTheme="dark">
+          {/* <Header /> */}
           {children}
           <Footer />
         </ThemeProvider>

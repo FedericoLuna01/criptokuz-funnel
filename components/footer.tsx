@@ -3,9 +3,9 @@ import Logo from "./ui/logo"
 const Footer = () => {
   const date = new Date().getFullYear()
   return (
-    <footer>
+    <footer className="border-t border-[#2d2d2d]">
       <div
-        className="container text-center md:text-left py-4 flex flex-col md:flex-row items-center justify-between border-t border-border min-h-20"
+        className="container text-center md:text-left py-4 flex flex-col md:flex-row items-center justify-between min-h-20"
       >
         <Logo
         />

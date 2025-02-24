@@ -1,4 +1,4 @@
-import Highlighter from "react-highlight-words";
+import Highlighter from "../highlighter";
 
 export interface HeadingProps {
   title: string;
@@ -7,16 +7,11 @@ export interface HeadingProps {
 
 const Heading: React.FC<HeadingProps> = ({ title, highlightWords }) => {
   return (
-    <div className="text-center max-w-5xl mx-auto space-y-4">
-      <h1 className="text-2xl sm:text-3xl font-bold">
+    <div className="text-center max-w-5xl mx-auto space-y-4 uppercase z-50">
+      <h1 className="text-2xl sm:text-4xl font-bold">
         <Highlighter
-          highlightStyle={{
-            color: "hsl(var(--primary))",
-            backgroundColor: "transparent",
-          }}
-          searchWords={highlightWords}
-          autoEscape={true}
-          textToHighlight={title}
+          wordsToHighlight={highlightWords}
+          text={title}
         />
       </h1>
     </div>
