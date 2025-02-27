@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Badge from './ui/badge'
 import Heading from './ui/heading'
@@ -62,20 +64,21 @@ const Rentable = () => {
           }
         </div>
         <div
-          className='flex items-center justify-center flex-col space-y-4'
+          className='flex items-center justify-center flex-col space-y-4 px-4 text-center  md:text-left'
         >
           <p>
-            ❌NO NECESITAS MAS CURSOS O ASESORIAS PARA SER RENTABLE.
+            ❌NO NECESITAS MAS CURSOS O ASESORÍAS PARA SER RENTABLE.
           </p>
           <p>
-            Necesitas un sistema probado que funcione y te garantice resultados sin precupaciones
+            Necesitas un sistema probado que funcione y te garantice resultados sin preocupaciones
           </p>
           <Button
             size='xl'
             asChild
+            className='text-center'
           >
             <a href="#calendly">
-              QUIERO USAR HEW PARA OPERAR
+              QUIERO USAR HEW {window.innerWidth < 550 && <br />} PARA OPERAR
             </a>
           </Button>
         </div>
