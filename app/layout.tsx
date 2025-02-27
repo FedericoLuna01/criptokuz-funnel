@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`dark ${font.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
-          {/* <Header /> */}
+          <Header />
           {children}
           <Footer />
         </ThemeProvider>

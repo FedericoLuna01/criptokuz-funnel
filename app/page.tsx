@@ -1,6 +1,9 @@
 import BackgroundLayout from "@/components/background-layout";
 import Calendly from "@/components/calendly";
+import CardsGrid from "@/components/cards-grid";
+import Faq from "@/components/faq";
 import Hero from "@/components/hero";
+import Rentable from "@/components/rentable";
 import Testimonials from "@/components/testimonials";
 import Badge from "@/components/ui/badge";
 
@@ -26,6 +29,9 @@ export default function Home() {
         title="Mira nuestros casos de éxito"
         highlightWords={[""]}
       />
+      <CardsGrid />
+      <Rentable />
+      <Faq />
     </main>
   );
 }

@@ -180,3 +180,54 @@ export const FaqItems = [
       "Siempre mantenemos 3-5 cupos al mes, por el hecho de que damos una mentoría super personalizada en base a las necesidades de nuestros alumnos, y es un enfoque mutuo de más de 90 días, por ende hoy dia no contamos con una infraestructura para aguantar mas de 5 estudiantes por mes.",
   },
 ];
+
+export const Cards_data = [
+  {
+    title: "Setup para alcanzar la rentabilidad",
+    description: "Un proceso paso a paso diseñado para que puedas generar rentabilidad durante años y décadas.",
+    image: "/card-1.png",
+  },
+  {
+    title: "Procesos y Sistemas",
+    description: "Accede a un Trading Center donde se detallan los procedimientos esenciales que debes aplicar al operar, permitiéndote mantener un journal impecable.",
+    image: "/card-2.png",
+  },
+  {
+    title: "Road Map",
+    description: "Una guía completa desde el primer día que trabajas con nosotros hasta que logras tus metas, eliminando cualquier margen de error en tu camino a la rentabilidad.",
+    image: "/card-3.png",
+  },
+  {
+    title: "Comunicación 24/7",
+    description: "Disfruta del acceso a un canal privado para resolver todas tus dudas y contar con mi apoyo constante hasta que alcances la rentabilidad deseada.",
+    image: "/card-4.png",
+  },
+  {
+    title: "Seguimiento",
+    description: "Un acompañamiento continuo que te mantendrá enfocado en tus objetivos, evitando que te desvíes durante el proceso.",
+    image: "/card-5.png",
+  },
+  {
+    title: "Llamadas Ilimitadas",
+    description: "Dispone de llamadas ilimitadas para que, ante cualquier inconveniente en los mercados, puedas levantar el teléfono y obtener una solución inmediata.",
+    image: "/card-6.png",
+  }
+]
+
+export const Rentable_data = [
+  {
+    title: "La mayoría de los traders no son rentables por que solo se enfocan en el precio usando ICT, SMC, Chartismo, Elliott Waves, Wyckoff, etc..",
+    description: "Olvidate de las metodologias del tipo uno que te acabo de mencionar, te explicamos que es HEW para que transiciones a las metodologias del tipo dos, lo que aplicando conceptos como VPVR y ciclos de tiempo, lo que va a llevarte a ser rentable en el tiempo",
+    image: "/rentable-1.png",
+  },
+  {
+    title: "Podrás lograr ser parte de ese 10% de Traders Rentables",
+    description: "Vas a tener un paso a paso exacto de lo que tenes que hacer en el mercado, y eso te va a permitir tener resultados escalables y predecibles para que entiendas que a fin de mes vas a terminar con resultados positivos",
+    image: "/rentable-2.png",
+  },
+  {
+    title: "Alcanzá la verdadera libertad",
+    description: "Consigue la libertad de tiempo, libertad geográfica y libertad financiera. Tendras un setup que te permita tener una efectividad mayor al 50% con un RR de 1:2 lo cual te hace imparable para los proximos años o decadas",
+    image: "/rentable-3.png",
+  }
+]
