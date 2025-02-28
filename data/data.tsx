@@ -1,4 +1,11 @@
 export const TestimonialsItems = [
+
+  {
+    id: 15,
+    video: "https://player.vimeo.com/video/1055451273?h=c7d063e4e3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "De $5,000 a $80,000 con esta estrategia de trading poco conocida",
+    highlightWords: ["$5,000", "$80,000", "estrategia", "trading"],
+  },
   {
     id: 1,
     video: "https://player.vimeo.com/video/961488529?h=49136f6c09&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
@@ -12,10 +19,22 @@ export const TestimonialsItems = [
     highlightWords: ["4 años", "RENTABLE", "HEW", "3 meses"],
   },
   {
+    id: 12,
+    video: "https://player.vimeo.com/video/1030361997?h=d190bc0bba&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Me dijeron que en 4 años iba a ser rentable, lo logre en 3 meses gracias a la mentoria",
+    highlightWords: ["4 años", "rentable", "3 meses", "mentoria"],
+  },
+  {
     id: 3,
     video: "https://player.vimeo.com/video/961487420?h=c573450c7d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Paso de no tener un setup, a poder ganar dinero con los mercados en solo 3 meses",
     highlightWords: ["setup", "dinero", "mercados", "3 meses"],
+  },
+  {
+    id: 14,
+    video: "https://player.vimeo.com/video/1055450907?h=f91ce1d000&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "De trader frustrado a rentable: El setup escalable que lo cambió todo",
+    highlightWords: ["frustrado", "rentable", "setup escalable"],
   },
   {
     id: 6,
@@ -28,12 +47,6 @@ export const TestimonialsItems = [
     video: "https://player.vimeo.com/video/961486598?h=9432c6e966&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Dejo su trabajo en el banco, para dedicarse plenamente al trading y gracias a HEW lo logro",
     highlightWords: ["banco", "trading", "HEW"],
-  },
-  {
-    id: 5,
-    video: "https://player.vimeo.com/video/961488329?h=fa8a062e9d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "Juan no conocía los mercados, en 3 meses alcanzo un win rate del 70%",
-    highlightWords: ["mercados", "3 meses", "win rate", "70%"],
   },
   {
     id: 6,
@@ -60,22 +73,10 @@ export const TestimonialsItems = [
     highlightWords: ["Ingeniero", "9.000 USD", "rentable"],
   },
   {
-    id: 10,
-    video: "https://player.vimeo.com/video/1020723823?h=f6d48fc749&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "Perdi $60.000 USD antes de tomar la mentoria",
-    highlightWords: ["$60.000 USD", "mentoria"],
-  },
-  {
     id: 11,
     video: "https://player.vimeo.com/video/1021566781?h=215b8c9a4c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Intentaba ser rentable pero usaba la metodología incorrecta",
     highlightWords: ["rentable", "metodología"],
-  },
-  {
-    id: 12,
-    video: "https://player.vimeo.com/video/1030361997?h=d190bc0bba&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "Me dijeron que en 4 años iba a ser rentable, lo logre en 3 meses gracias a la mentoria",
-    highlightWords: ["4 años", "rentable", "3 meses", "mentoria"],
   },
   {
     id: 13,
@@ -84,54 +85,16 @@ export const TestimonialsItems = [
     highlightWords: ["rentable", "auto-didacta", "HEW"],
   },
   {
-    id: 14,
-    video: "https://player.vimeo.com/video/1055450907?h=f91ce1d000&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "De trader frustrado a rentable: El setup escalable que lo cambió todo",
-    highlightWords: ["frustrado", "rentable", "setup escalable"],
-  },
-  {
-    id: 15,
-    video: "https://player.vimeo.com/video/1055451273?h=c7d063e4e3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    description: "De $5,000 a $80,000 con esta estrategia de trading poco conocida",
-    highlightWords: ["$5,000", "$80,000", "estrategia", "trading"],
-  }
-];
-
-export const VideosTestimonials = [
-  {
-    id: 1,
-    src: "https://www.youtube.com/embed/qFwHMN6k8hc?si=MT0vgGDw1YuJXWXI",
-    description: "Julieta dejo su trabajo ahora es rentable",
-  },
-  {
-    id: 2,
-    src: "https://www.youtube.com/embed/OXWB1IESVYA?si=zhJPzJKR7g5G3W43",
-    description: "Leonardo no tenía setup",
-  },
-  {
-    id: 3,
-    src: "https://www.youtube.com/embed/5AFiCrJ4zSw?si=M8HebmrMk152lDQY",
-    description: "Jhonatan ahora tiene claridad absoluta",
-  },
-  {
-    id: 4,
-    src: "https://www.youtube.com/embed/UjrkkYjNWxg?si=8Gr1K9ir2DMjzIVO",
-    description: "Fui papa durante el programa y ahora soy rentable",
-  },
-  {
     id: 5,
-    src: "https://www.youtube.com/embed/m6TGEHhN698?si=NbOeRFfdPKYTBIO0",
-    description: "Estaba sin rumbo y ahora vivo de esto",
+    video: "https://player.vimeo.com/video/961488329?h=fa8a062e9d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Juan no conocía los mercados, en 3 meses alcanzo un win rate del 70%",
+    highlightWords: ["mercados", "3 meses", "win rate", "70%"],
   },
   {
-    id: 6,
-    src: "https://www.youtube.com/embed/tZyXPLZBmrM?si=F6dZZE2pFVWJEwEZ",
-    description: "Ahora opero con fundamentos reales",
-  },
-  {
-    id: 7,
-    src: "https://www.youtube.com/embed/4_Jvkxo9rIA?si=dctiXYpVCDZBGuqd",
-    description: "Es un Antes y un Después",
+    id: 10,
+    video: "https://player.vimeo.com/video/1020723823?h=f6d48fc749&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Perdi $60.000 USD antes de tomar la mentoria",
+    highlightWords: ["$60.000 USD", "mentoria"],
   },
 ];
 
