@@ -96,6 +96,12 @@ export const TestimonialsItems = [
     description: "Perdi $60.000 USD antes de tomar la mentoria",
     highlightWords: ["$60.000 USD", "mentoria"],
   },
+  {
+    id: 16,
+    video: "https://player.vimeo.com/video/1061438932?h=ebce75dec8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Con 21 años me volvi rentable",
+    highlightWords: ["21 años", "rentable"],
+  },
 ];
 
 export const FaqItems = [
