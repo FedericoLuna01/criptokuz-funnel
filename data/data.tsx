@@ -102,6 +102,12 @@ export const TestimonialsItems = [
     description: "Con 21 años me volvi rentable",
     highlightWords: ["21 años", "rentable"],
   },
+  {
+    id: 17,
+    video: "https://player.vimeo.com/video/1061847786?h=a608fc0347&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Soy rentable gracias a HEW",
+    highlightWords: ["rentable", "HEW"],
+  }
 ];
 
 export const FaqItems = [
