@@ -46,7 +46,7 @@ const ThankYouPage = () => {
           asChild
         >
           <a
-            href="https://api.whatsapp.com/send?phone=5491140971234&text=Hola,%20qu%C3%A9%20tal?%20Agende%20una%20sesi%C3%B3n%20por%20favor"
+            href="https://w.app/zeu6sd"
             target="_blank"
             className="z-50 mb-10"
           >
