@@ -1,5 +1,10 @@
 export const TestimonialsItems = [
-
+  {
+    id: 18,
+    video: "https://player.vimeo.com/video/1075011424?h=08529dba8c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Dejar mi ego me permitio llegar a ser rentable",
+    highlightWords: ["ego", "rentable"],
+  },
   {
     id: 15,
     video: "https://player.vimeo.com/video/1055451273?h=c7d063e4e3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
@@ -107,6 +112,12 @@ export const TestimonialsItems = [
     video: "https://player.vimeo.com/video/1061847786?h=a608fc0347&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Soy rentable gracias a HEW",
     highlightWords: ["rentable", "HEW"],
+  },
+  {
+    id: 18,
+    video: "https://player.vimeo.com/video/1075012956?h=57eb884412&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Entender las dimensiones es la clave para ganar",
+    highlightWords: ["dimensiones", "ganar"],
   }
 ];
 
