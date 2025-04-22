@@ -39,7 +39,7 @@ const ThankYouPage = () => {
           isMain={false}
           title="Paso #1 (OBLIGATORIO) Mira el siguiente video para confirmar tu llamada"
           highlightWords={["paso #1"]}
-          video="https://player.vimeo.com/video/1036551613?h=e65bbb5409&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          video="https://player.vimeo.com/video/1077456855?h=ccbfc9f446&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         />
         <Button
           size="xl"
