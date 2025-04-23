@@ -118,6 +118,12 @@ export const TestimonialsItems = [
     video: "https://player.vimeo.com/video/1075012956?h=57eb884412&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Entender las dimensiones es la clave para ganar",
     highlightWords: ["dimensiones", "ganar"],
+  },
+  {
+    id: 19,
+    video: "https://player.vimeo.com/video/1078114760?h=15545dcc66&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Me canse de perder plata en trading",
+    highlightWords: ["perder", "plata", "trading"],
   }
 ];
 
