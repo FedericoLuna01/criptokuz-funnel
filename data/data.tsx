@@ -133,6 +133,57 @@ export const TestimonialsItems = [
   }
 ];
 
+export const HorizontalTestimonialsItems = [
+  {
+    id: 1,
+    name: "Leonardo",
+    video: "https://player.vimeo.com/video/1084735309?h=dc0bfc302a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "No hubiera sabido que problemas me impedían ser rentable si no hubiera agendado una llamada con Mauro",
+    wordsToHighlight: ["problemas", "rentable", "llamada"],
+    wr: 67
+  },
+  {
+    id: 2,
+    name: "Julieta",
+    video: "https://player.vimeo.com/video/1084735340?h=b53478869b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Trabajar con Mauro me permitió controlar mis emociones y tener un setup con el cual soy rentable",
+    wordsToHighlight: ["emociones", "setup", "rentable"],
+    wr: 71
+  },
+  {
+    id: 3,
+    name: "Agustin",
+    video: "https://player.vimeo.com/video/1085084889?h=91b1d754f0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Me tomaba el trading como un hobbie porque nunca podia tener resultados, hoy dia es una de mis fuentes principales de ingreso",
+    wordsToHighlight: ["trading", "hobbie", "resultados", "ingreso"],
+    wr: 73
+  },
+  {
+    id: 4,
+    name: "Javier",
+    video: "https://player.vimeo.com/video/1085086259?h=dc526f395e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Buscaba rentabilizar mis ahorros, porque como buen argentino los dejaba abajo del colchón y hoy mi portafolio no para de crecer",
+    wordsToHighlight: ["rentabilizar", "ahorros", "argentino", "portafolio"],
+    wr: 76
+  },
+  {
+    id: 5,
+    name: "Matias",
+    video: "https://player.vimeo.com/video/1084735478?h=2688bea4b3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Pase de perder muchisima plata, y gracias a Mauro hoy dia tengo un setup portable y escalable con el cual consegui la rentabilidad",
+    wordsToHighlight: ["plata", "setup", "escalable", "rentabilidad"],
+    wr: 68
+  },
+  {
+    id: 6,
+    name: "Patricio",
+    video: "https://player.vimeo.com/video/1084735434?h=ec3ac50587&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Siempre ganaba y perdia, nunca podia ganar mas de lo que perdia, y cuando hice el programa con Mauro, fue un giro 180, teniendo una efectividad mayor a 60%",
+    wordsToHighlight: ["ganar", "perder", "efectividad", "60%"],
+    wr: 74
+  }
+]
+
 export const FaqItems = [
   {
     id: 1,

@@ -3,8 +3,8 @@ import Calendly from "@/components/calendly";
 import CardsGrid from "@/components/cards-grid";
 import Faq from "@/components/faq";
 import Hero from "@/components/hero";
+import HorizontalTestimonials from "@/components/horizontal-testimonials";
 import Rentable from "@/components/rentable";
-import Testimonials from "@/components/testimonials";
 import Badge from "@/components/ui/badge";
 
 export default function Home() {
@@ -25,10 +25,7 @@ export default function Home() {
         />
       </BackgroundLayout>
       <Calendly />
-      <Testimonials
-        title="Mira nuestros casos de éxito"
-        highlightWords={[""]}
-      />
+      <HorizontalTestimonials />
       <CardsGrid />
       <Rentable />
       <Faq />
