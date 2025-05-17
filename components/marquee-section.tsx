@@ -6,8 +6,8 @@ const MarqueeSection = () => {
   return (
     <section className="z-50 bg-black border-b border-[#2d2d2d] py-8 ">
       <div className="container mx-auto flex items-center flex-col">
-        <div className="flex flex-col items-center justify-center max-w-4xl">
-          <h3 className="text-center font-semibold text-lg max-w-2xl">
+        <div className="flex flex-col items-center justify-center max-w-4xl text-center">
+          <h3 className="font-semibold text-lg max-w-2xl">
             +
             <span className="inline-block min-w-[7ch] font-tabular-nums">
               <NumberTicker value={284392} />
