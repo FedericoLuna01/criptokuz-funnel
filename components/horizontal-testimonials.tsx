@@ -8,7 +8,7 @@ import SlideIn from './slide-in'
 const HorizontalTestimonials = () => {
   return (
     <section
-      className="border-t border-[#2d2d2d]"
+      className="border-t border-[#2d2d2d] z-50"
     >
       <div
         className="container mx-auto px-4 py-12 flex items-center flex-col justify-center space-y-8"
@@ -65,7 +65,6 @@ const HorizontalTestimonials = () => {
         </div>
       </div>
     </section>
-
   )
 }
 

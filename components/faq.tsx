@@ -24,7 +24,7 @@ const Faq = ({ }) => {
               <AccordionItem
                 key={id}
                 value={`item-${id}`}
-                className="border-[1px] border-[#2d3740] rounded-lg"
+                className="border border-[#2d3740] rounded-lg"
               >
                 <AccordionTrigger
                   className=" font-bold border-[#2d3740] rounded-lg px-6 text-left hover:text-[#0faab6] data-[state=open]:rounded-b-none  data-[state=open]:border-b  data-[state=open]:text-[#0faab6]"

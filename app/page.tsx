@@ -4,6 +4,7 @@ import CardsGrid from "@/components/cards-grid";
 import Faq from "@/components/faq";
 import Hero from "@/components/hero";
 import HorizontalTestimonials from "@/components/horizontal-testimonials";
+import MarqueeSection from "@/components/marquee-section";
 import Rentable from "@/components/rentable";
 import Badge from "@/components/ui/badge";
 
@@ -24,8 +25,11 @@ export default function Home() {
           steps
         />
       </BackgroundLayout>
+      <MarqueeSection />
       <Calendly />
-      <HorizontalTestimonials />
+      <BackgroundLayout>
+        <HorizontalTestimonials />
+      </BackgroundLayout>
       <CardsGrid />
       <Rentable />
       <Faq />
