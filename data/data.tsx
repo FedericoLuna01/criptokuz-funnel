@@ -135,6 +135,14 @@ export const TestimonialsItems = [
 
 export const HorizontalTestimonialsItems = [
   {
+    id: 7,
+    name: "Nicolas",
+    video: "https://player.vimeo.com/video/1085525552?h=09b09f0bfa&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Antes de trabajar con Mauro, casi caigo en los peores ponzis y hoy dia tengo un setup escalable con el cual soy rentable",
+    wordsToHighlight: ["ponzis", "setup", "escalable", "rentable"],
+    wr: 71
+  },
+  {
     id: 1,
     name: "Leonardo",
     video: "https://player.vimeo.com/video/1084735309?h=dc0bfc302a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
@@ -180,6 +188,14 @@ export const HorizontalTestimonialsItems = [
     video: "https://player.vimeo.com/video/1084735434?h=ec3ac50587&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     description: "Siempre ganaba y perdia, nunca podia ganar mas de lo que perdia, y cuando hice el programa con Mauro, fue un giro 180, teniendo una efectividad mayor a 60%",
     wordsToHighlight: ["ganar", "perder", "efectividad", "60%"],
+    wr: 74
+  },
+  {
+    id: 8,
+    name: "Jhonatan",
+    video: "https://player.vimeo.com/video/1084735364?h=89597e7f32&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "No recomiendo el programa si realmente no tenes disciplina y si minimamente no te encantan los mercados.",
+    wordsToHighlight: ["disciplina", "mercados"],
     wr: 74
   }
 ]

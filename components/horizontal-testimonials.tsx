@@ -39,10 +39,10 @@ const HorizontalTestimonials = () => {
                 />
                 <div className='flex flex-col md:flex-row justify-center gap-4 h-full'>
                   <div className='w-full md:w-[70%]'>
-                    <div className='font-normal md:font-semibold text-zinc-300'>
+                    <div className='font-normal md:font-semibold text-gray-400'>
                       {item.name}
                     </div>
-                    <div className='text-xl md:text-2xl font-semibold leading-[105%]'>
+                    <div className='text-xl md:text-2xl leading-[105%]'>
                       <Highlighter
                         text={item.description}
                         wordsToHighlight={item.wordsToHighlight}
