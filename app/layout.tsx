@@ -5,10 +5,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { GoogleAnalytics } from "@next/third-parties/google";
-// import { Suspense } from "react";
-// import { FacebookPixelEvents } from "@/components/pixel-events";
-import dynamic from "next/dynamic";
-import PixelTracker from "@/components/pixel-tracker";
+import Script from "next/script";
 
 const font = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
 
@@ -27,12 +24,14 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <script
+        <Script
+          id="fb-pixel"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?                         
-              n.callMethod.apply(n,arguments):n.queue.push   
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push
               (arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!
               0;n.version='2.0';n.queue=[];t=b.createElement(e);
               t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
@@ -52,22 +51,17 @@ export default function RootLayout({
             src="https://www.facebook.com/tr?id=1121793129971987&ev=
             PageView&noscript=1"/>
         </noscript>
-        {/* End Meta Pixel Code */}
       </head>
       <body
         className={`dark ${font.className}`}
       >
         <GoogleAnalytics gaId="G-6SM89PPRHD" />
-        {/* <Suspense fallback={null}>
-          <FacebookPixelEvents />
-        </Suspense> */}
-        <PixelTracker />
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
           {children}
           <Footer />
         </ThemeProvider>
       </body>
-    </html>
+    </html >
   );
 }

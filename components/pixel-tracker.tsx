@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import ReactPixel from "react-facebook-pixel";
 const PixelTracker = () => {
+
   useEffect(() => {
     const pixelId = "1121793129971987";
     ReactPixel.init(pixelId);
