@@ -5,6 +5,9 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Suspense } from "react";
+import { FacebookPixelEvents } from "@/components/pixel-events";
+
 
 const font = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
 
@@ -26,6 +29,9 @@ export default function RootLayout({
         className={`dark ${font.className}`}
       >
         <GoogleAnalytics gaId="G-6SM89PPRHD" />
+        <Suspense fallback={null}>
+          <FacebookPixelEvents />
+        </Suspense>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
           {children}
