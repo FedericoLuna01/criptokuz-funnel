@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-const PixelTracker = () => {
+const PixelTrackerLead = () => {
   useEffect(() => {
     // Solo ejecutar en el cliente donde window está disponible
     if (typeof window !== 'undefined') {
@@ -10,9 +10,9 @@ const PixelTracker = () => {
       import('react-facebook-pixel').then((ReactPixel) => {
         const pixelId = "1121793129971987";
         ReactPixel.default.init(pixelId);
-        ReactPixel.default.pageView();
+        ReactPixel.default.fbq("track", "Lead");
       }).catch((error) => {
-        console.error('Error loading Facebook Pixel:', error);
+        console.error('Error loading Facebook Pixel for Lead tracking:', error);
       });
     }
   }, []);
@@ -20,4 +20,4 @@ const PixelTracker = () => {
   return null;
 };
 
-export default PixelTracker;
+export default PixelTrackerLead;

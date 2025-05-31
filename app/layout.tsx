@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
+import PixelTracker from "@/components/pixel-tracker";
 
 const font = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
 
@@ -55,6 +56,7 @@ export default function RootLayout({
       <body
         className={`dark ${font.className}`}
       >
+        <PixelTracker />
         <GoogleAnalytics gaId="G-6SM89PPRHD" />
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
