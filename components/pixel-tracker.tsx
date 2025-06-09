@@ -8,7 +8,7 @@ const PixelTracker = () => {
     if (typeof window !== 'undefined') {
       // Importación dinámica para evitar problemas de SSR
       import('react-facebook-pixel').then((ReactPixel) => {
-        const pixelId = "1121793129971987";
+        const pixelId = "1262635791863284";
         ReactPixel.default.init(pixelId);
         ReactPixel.default.pageView();
       }).catch((error) => {
