@@ -197,6 +197,14 @@ export const HorizontalTestimonialsItems = [
     description: "No recomiendo el programa si realmente no tenes disciplina y si minimamente no te encantan los mercados.",
     wordsToHighlight: ["disciplina", "mercados"],
     wr: 74
+  },
+  {
+    id: 9,
+    name: "Juan",
+    video: "https://player.vimeo.com/video/1090255342?h=ab52a8c98c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    description: "Mi problema principal era mi psicotrading, y eso impedia que yo fuera rentable, gracias al 1 a 1 y trabajar con mauro, llegue a la rentabilidad",
+    wordsToHighlight: ["psicotrading", "rentable", "1 a 1"],
+    wr: 64
   }
 ]
 
