@@ -1,7 +1,32 @@
+"use client"
+
 import Script from "next/script";
 import Heading from "./ui/heading";
+import { useEffect } from "react";
 
 const Calendly = () => {
+  useEffect(() => {
+    const handleCalendlyEvent = (e: MessageEvent) => {
+      if (e.data.event && e.data.event === "calendly.event_scheduled") {
+        if (typeof window !== 'undefined') {
+          import('react-facebook-pixel').then((ReactPixel) => {
+            const pixelId = "1262635791863284";
+            ReactPixel.default.init(pixelId);
+            ReactPixel.default.fbq("track", "Schedule");
+          }).catch((error) => {
+            console.error('Error loading Facebook Pixel for Schedule tracking:', error);
+          });
+        }
+      }
+    };
+
+    window.addEventListener("message", handleCalendlyEvent);
+
+    return () => {
+      window.removeEventListener("message", handleCalendlyEvent);
+    };
+  }, []);
+
   return (
     <>
       <section className="flex items-center mx-auto flex-col mt-10 px-2" >
