@@ -28,22 +28,19 @@ const Testimonials: React.FC<TestimonialProps> = ({
           highlightWords={highlightWords}
         />
         <div
-          className="grid grid-cols-1 xl:grid-cols-3 gap-x-10 gap-y-5 md:gap-y-10"
+          className="grid grid-cols-1 xl:grid-cols-2 gap-x-10 gap-y-5 md:gap-y-10"
         >
           {
-            TestimonialsItems.map(({ id, video, description, highlightWords }, index) => {
-              const isLast = TestimonialsItems.length === index + 1
-              const isOdd = TestimonialsItems.length % 2 !== 0
+            TestimonialsItems.map(({ id, video, user, badInfo, goodInfo }) => {
               return (
                 <Testimonial
                   key={id}
                   video={video}
-                  description={description}
-                  highlightWords={highlightWords}
-                  isLast={isLast && isOdd}
+                  user={user}
+                  badInfo={badInfo}
+                  goodInfo={goodInfo}
                 />
               )
-
             })
           }
         </div>

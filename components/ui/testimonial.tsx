@@ -1,17 +1,17 @@
 import { cn } from "@/lib/utils";
-import Highlighter from "../highlighter";
+import { CheckIcon, XIcon } from "lucide-react";
 
 interface TestimonialProps {
   video: string
-  description: string
-  highlightWords?: string[];
-  isLast?: boolean
+  user: string;
+  badInfo: string;
+  goodInfo: string;
 }
 
-const Testimonial: React.FC<TestimonialProps> = ({ video, description, highlightWords = [], isLast = false }) => {
+const Testimonial: React.FC<TestimonialProps> = ({ video, user, badInfo, goodInfo }) => {
   return (
     <article
-      className={cn("space-y-4 max-w-2xl w-full mx-auto p-3 bg-[#FFFFFF12] border border-[#444d55] rounded-lg bg-black")}
+      className={cn("space-y-4 max-w-2xl w-full mx-auto p-3 bg-black border border-[#444d55] rounded-lg")}
     >
       <iframe
         src={video}
@@ -21,12 +21,19 @@ const Testimonial: React.FC<TestimonialProps> = ({ video, description, highlight
         className="rounded-lg w-full aspect-video"
       ></iframe>
       <div
-        className='text-xl font-semibold'
+        className='flex flex-col gap-y-3 leading-none font-semibold'
       >
-        <Highlighter
-          wordsToHighlight={highlightWords}
-          text={description}
-        />
+        <div className="flex items-center gap-2 text-gray-300 ">
+          <p>{user}</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <XIcon className="size-5 text-red-500 stroke-3" />
+          <p>{badInfo}</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <CheckIcon className="size-5 text-emerald-500 stroke-3" />
+          <p>{goodInfo}</p>
+        </div>
       </div>
     </article>
   )
