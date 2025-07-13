@@ -49,7 +49,7 @@ const ThankYouPage = () => {
             asChild
           >
             <a
-              href="https://wa.me/5492984504372?text=Buenas,%20acabo%20de%20agendar%20una%20llamada%20con%20vos%20mi%20nombre%20es"
+              href="https://wa.me/5492984376411?text=Buenas,%20acabo%20de%20agendar%20una%20llamada%20con%20vos%20mi%20nombre%20es"
               target="_blank"
               className="z-50 mb-10"
             >
