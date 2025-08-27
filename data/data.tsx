@@ -152,6 +152,27 @@ export const TestimonialsItems = [
     user: "Silvio - 34 años - Logistica ",
     badInfo: "Usaba Smart Money Concepts",
     goodInfo: "Logró operar sin ansiedad y con setup en solo 3 meses",
+  },
+  {
+    id: 21,
+    video: "https://player.vimeo.com/video/1113444746?h=bead54f083&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    user: "Ivan - 25 años -  operario hidroeléctrico",
+    badInfo: "Era auto-didacta porque tenia miedo que lo estafen",
+    goodInfo: "Tiene un setup, con kpi positivos"
+  },
+  {
+    id: 22,
+    video: "https://player.vimeo.com/video/1113444737?h=3ee2c94265&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    user: "Axel - 19 años - Editor de video",
+    badInfo: "Tenia una ensalada de conocimiento",
+    goodInfo: "Tiene un setup mecanizado rentable"
+  },
+  {
+    id: 23,
+    video: "https://player.vimeo.com/video/1113390166?h=1d99a875da&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    user: "Diego - 37 años - Ingeniero",
+    badInfo: "Me tomaba el trading como hobby",
+    goodInfo: "Hoy dia tiene mas de un 70% de wr"
   }
 ];
 
