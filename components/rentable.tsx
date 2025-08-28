@@ -78,7 +78,7 @@ const Rentable = () => {
             className='text-center'
           >
             <a href="#calendly">
-              QUIERO USAR HEW <br /> PARA OPERAR
+              Agenda tu llamada
             </a>
           </Button>
         </div>

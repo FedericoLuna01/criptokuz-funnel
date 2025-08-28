@@ -66,7 +66,7 @@ const Hero: React.FC<HeroProps> = ({
             asChild
             className="z-50"
           >
-            <a href="#calendly">Quiero aplicar</a>
+            <a href="#calendly">Agenda tu llamada</a>
           </Button>
         }
       </div>

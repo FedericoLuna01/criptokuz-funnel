@@ -18,9 +18,9 @@ export default function Home() {
           text="Exclusivo para Traders/Operadores de mercado"
         />
         <Hero
-          title="Como dejar de perder y empezar a operar con un sistema claro y mecanizado (precio, tiempo, volumen)"
+          title="Te ayudamos a volverte Rentable en menos de 90 dias a través de HEW"
           video="https://player.vimeo.com/video/1028229172?h=303fcf7d1f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          subtitle="El paso a paso que utilizo para tener la rentabilidad por mas de 6 años de manera consistente y predecible, y la mejor parte es que si no sos rentable, te devolvemos cada dolar que nos pagaste garantizado por contrato"
+          subtitle="Si ya probaste Wyckoff, SMC o acción del precio y seguís estancado, es normal: estabas viendo solo precio. Con HEW dejás de depender de un trading interpretativo y pasás a reglas claras de precio, tiempo y volumen (garantizado por contrato)"
           highlightWords={["sistema"]}
           steps
         />

@@ -50,7 +50,7 @@ const Testimonials: React.FC<TestimonialProps> = ({
               size='xl'
               asChild
             >
-              <a href="#calendly">Quiero aplicar</a>
+              <a href="#calendly">Agenda tu llamada</a>
             </Button>
             :
             <div
