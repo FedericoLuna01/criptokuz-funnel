@@ -38,7 +38,7 @@ const WhoAmI = () => {
               src={WhoAmIImage}
               fill={true}
               alt="Quien soy"
-              className="object-cover"
+              className="object-cover rounded-lg"
             />
           </div>
         </div>
