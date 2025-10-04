@@ -9,8 +9,10 @@ import PixelTracker from "@/components/pixel-tracker";
 
 const font = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
 
+const isDevelopment = process.env.NODE_ENV === "development";
+
 export const metadata: Metadata = {
-  title: "Criptokuz",
+  title: isDevelopment ? "Criptokuz - develop" : "Criptokuz",
   description:
     "Bienvenido a nuestra página, aca vas a encontrar información de como convertirte en trader.",
   icons: ["/favicon.png"],
