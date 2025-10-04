@@ -1,14 +1,13 @@
 import Badge from './ui/badge'
 import Heading from './ui/heading'
-import Highlighter from './highlighter'
-import { TrendingUp } from 'lucide-react'
+import { CheckIcon, TrendingUp, XIcon } from 'lucide-react'
 import { HorizontalTestimonialsItems } from '@/data/data'
 import SlideIn from './slide-in'
 
 const HorizontalTestimonials = () => {
   return (
     <section
-      className="border-t border-[#2d2d2d] z-50"
+      className="border-t border-[#2d2d2d] w-full z-50"
     >
       <div
         className="container mx-auto px-4 py-12 flex items-center flex-col justify-center space-y-8"
@@ -42,11 +41,15 @@ const HorizontalTestimonials = () => {
                     <div className='font-normal md:font-semibold text-gray-400'>
                       {item.name}
                     </div>
-                    <div className='text-xl md:text-2xl leading-[105%]'>
-                      <Highlighter
-                        text={item.description}
-                        wordsToHighlight={item.wordsToHighlight}
-                      />
+                    <div className='flex flex-col items-start gap-2 font-semibold'>
+                      <div className="flex items-center gap-2">
+                        <XIcon className="size-5 text-red-500 stroke-3" />
+                        <p>{item.badInfo}</p>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <CheckIcon className="size-5 text-emerald-500 stroke-3" />
+                        <p>{item.goodInfo}</p>
+                      </div>
                     </div>
                   </div>
                   <div className='p-2 border border-[#495159] rounded-md bg-[#0d0f16] flex items-center flex-col w-full md:w-[30%] justify-center'>

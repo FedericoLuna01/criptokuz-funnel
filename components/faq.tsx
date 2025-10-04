@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./
 
 const Faq = ({ }) => {
   return (
-    <section className="py-10 border-t border-[#2d2d2d]"
+    <section className="py-10"
       style={{
         backgroundImage: "radial-gradient(at center center,#111 0%,#0a0a0a 69%)"
       }}

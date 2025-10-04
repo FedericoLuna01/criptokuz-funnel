@@ -32,7 +32,7 @@ const Calendly = () => {
       <section className="flex items-center mx-auto flex-col mt-10 px-2" >
         <div>
           <Heading
-            title={`Paso 2 de 2: Agendá tu llamada`}
+            title={`Agendá tu llamada`}
             highlightWords={["llamada", "2 de 2"]}
           />
         </div>

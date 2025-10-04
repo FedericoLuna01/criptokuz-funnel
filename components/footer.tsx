@@ -15,10 +15,10 @@ const Footer = () => {
           Copyright &copy; {date} Criptokuz | Todos los derechos reservados | Diseño y desarrollo{' '}
           <a
             target="_blank"
-            href="https://www.cuppyagenciaweb.com/"
+            href="https://www.federicoluna.me/"
             className="text-cyan-300 hover:brightness-90 hover:underline transition-all ease-in-out"
           >
-            Cuppy agencia web
+            Federico Luna
           </a>
         </p>
       </div>
