@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import Footer from "@/components/footer";
-import Header from "@/components/header";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import PixelTracker from "@/components/pixel-tracker";
@@ -23,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning>
       <head>
         <Script
           id="fb-pixel"
@@ -45,9 +44,11 @@ export default function RootLayout({
           }}
         />
         <noscript>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             height="1"
             width="1"
+            alt="Fb Pixel"
             style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=1121793129971987&ev=
             PageView&noscript=1"/>
@@ -59,7 +60,6 @@ export default function RootLayout({
         <PixelTracker />
         <GoogleAnalytics gaId="G-6SM89PPRHD" />
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <Header />
           {children}
           <Footer />
         </ThemeProvider>

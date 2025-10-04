@@ -1,6 +1,7 @@
 import { Button } from "./ui/button"
 import Heading from "./ui/heading"
 import { Separator } from "./ui/separator"
+import { LiquidHighlight } from "./ui/liquid-highlight";
 
 interface HeroProps {
   title: string;
@@ -24,10 +25,19 @@ const Hero: React.FC<HeroProps> = ({
   return (
     <section>
       <div className="container flex flex-col items-center justify-center space-y-6 py-10 z-50">
-        <Heading
-          title={title}
-          highlightWords={highlightWords}
-        />
+        {
+          isMain ? (
+            <div className="text-2xl sm:text-4xl font-bold uppercase text-center max-w-5xl">
+              Te instalamos un sistema a traves de {" "}<LiquidHighlight className="px-2">HEW</LiquidHighlight>, <LiquidHighlight className="px-2">tiempo</LiquidHighlight>, <LiquidHighlight className="px-2">volumen</LiquidHighlight> y kpis, para operar sin interpretación, y con pautas-métricas medibles
+            </div>
+          ) : (
+            <Heading
+              title={title}
+              highlightWords={highlightWords}
+            />
+          )
+        }
+
         {
           subtitle && (
             <p className="max-w-3xl text-center text-xl text-zinc-300 z-50">
