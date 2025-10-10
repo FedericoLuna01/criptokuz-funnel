@@ -10,7 +10,7 @@ import { Button } from './ui/button'
 const Entregables = () => {
   return (
     <section
-      className="border-t border-[#2d2d2d] z-50 w-full"
+      className="border-t border-input z-50 w-full"
     >
       <div
         className="container mx-auto px-4 py-12 flex items-center flex-col justify-center space-y-8 z-50"
@@ -46,7 +46,7 @@ const Entregables = () => {
                     {item.title}
                   </h4>
                   <Separator className='my-2 bg-gradient-to-r from-primary/30 from-5% to-90% to-transparent' />
-                  <p className='text-gray-200'>
+                  <p className='text-muted-foreground'>
                     {item.description}
                   </p>
                 </div>

@@ -57,11 +57,11 @@ export default function RootLayout({
         </noscript>
       </head>
       <body
-        className={`dark ${font.className}`}
+        className={` ${font.className}`}
       >
         <PixelTracker />
         <GoogleAnalytics gaId="G-6SM89PPRHD" />
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="light">
           {children}
           <Footer />
         </ThemeProvider>

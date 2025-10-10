@@ -17,7 +17,7 @@ const Testimonials: React.FC<TestimonialProps> = ({
 }) => {
   return (
     <section
-      className="py-10 border-t border-b border-[#2d2d2d] bg-[#111]"
+      className="py-10 border-t border-b border-input bg-[#111]"
     >
       <div className="container flex flex-col items-center justify-center space-y-6">
         <Badge

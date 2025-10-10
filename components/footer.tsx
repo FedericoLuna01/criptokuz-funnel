@@ -3,7 +3,7 @@ import Logo from "./ui/logo"
 const Footer = () => {
   const date = new Date().getFullYear()
   return (
-    <footer className="border-t border-[#2d2d2d]">
+    <footer className="border-t border-input">
       <div
         className="container text-center md:text-left py-4 flex flex-col md:flex-row items-center justify-between min-h-20"
       >
