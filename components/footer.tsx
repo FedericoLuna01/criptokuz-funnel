@@ -7,8 +7,7 @@ const Footer = () => {
       <div
         className="container text-center md:text-left py-4 flex flex-col md:flex-row items-center justify-between min-h-20"
       >
-        <Logo
-        />
+        <Logo />
         <p
           className="text-sm text-gray-500 mt-4 md:mt-0"
         >

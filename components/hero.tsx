@@ -57,7 +57,7 @@ const Hero: React.FC<HeroProps> = ({
           )
         }
         <div
-          className="mx-auto max-w-5xl w-full h-full p-3 bg-[#FFFFFF12] border border-[#444d55] rounded-lg hover:shadow-[0px_0px_70px_-12px_rgba(18,193,243,.5)] transition-shadow duration-300 z-50"
+          className="mx-auto max-w-5xl w-full h-full p-3 bg-[#FFFFFF12] border border-border rounded-lg hover:shadow-[0px_0px_70px_-12px_rgba(18,193,243,.5)] transition-shadow duration-300 z-50"
         >
           <iframe
             src={video}
