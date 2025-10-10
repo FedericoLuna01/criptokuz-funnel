@@ -5,9 +5,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./
 const Faq = ({ }) => {
   return (
     <section className="py-10"
-      style={{
-        backgroundImage: "radial-gradient(at center center,#111 0%,#0a0a0a 69%)"
-      }}
     >
       <div className="container space-y-6">
         <Heading
@@ -24,16 +21,15 @@ const Faq = ({ }) => {
               <AccordionItem
                 key={id}
                 value={`item-${id}`}
-                className="border border-[#2d3740] rounded-lg"
+                className="border border-border rounded-lg"
               >
                 <AccordionTrigger
-                  className=" font-bold border-[#2d3740] rounded-lg px-6 text-left hover:text-[#0faab6] data-[state=open]:rounded-b-none  data-[state=open]:border-b  data-[state=open]:text-[#0faab6]"
-                  style={{ background: 'linear-gradient(283deg,#FFFFFF1A 0%,#FFFFFF12 100%)' }}
+                  className=" font-bold rounded-lg px-6 text-left hover:text-[#0faab6] data-[state=open]:rounded-b-none  data-[state=open]:border-b  data-[state=open]:text-[#0faab6]"
                 >
                   {question}
                 </AccordionTrigger>
                 <AccordionContent
-                  className="bg-black px-6 py-4 rounded-lg text-[1.1em] text-[#c7c7c7]"
+                  className="bg-background px-6 py-4 rounded-lg text-[1.1em] text-muted-foreground"
                 >
                   {answer}
                 </AccordionContent>

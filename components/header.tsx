@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <header
-      className='border-b border-[#2d2d2d] py-4'
+      className='border-b border-input py-4'
     >
       <div className='container mx-auto flex items-center justify-center'>
         <Image

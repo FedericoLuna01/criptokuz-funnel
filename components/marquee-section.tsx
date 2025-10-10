@@ -4,7 +4,7 @@ import { NumberTicker } from "./magicui/number-ticker"
 
 const MarqueeSection = () => {
   return (
-    <section className="z-50 bg-black border-b border-[#2d2d2d] py-8 ">
+    <section className="z-50 bg-background border-b border-input py-8 ">
       <div className="container mx-auto flex items-center flex-col">
         <div className="flex flex-col items-center justify-center max-w-4xl text-center">
           <h3 className="font-semibold text-lg max-w-2xl">
@@ -13,7 +13,7 @@ const MarqueeSection = () => {
               <NumberTicker value={284392} />
             </span>USD Cash Collecteado entre todas las personas que trabajaron con nosotros
           </h3>
-          <p className="text-zinc-400">Accedes a ver sus entrevistas una ves que te Agendes</p>
+          <p className="text-muted-foreground">Accedes a ver sus entrevistas una ves que te Agendes</p>
           <div className="overflow-hidden relative max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-3xl mt-8">
             <Marquee className="[--duration:35s]">
               {

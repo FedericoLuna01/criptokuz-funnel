@@ -7,7 +7,7 @@ import SlideIn from './slide-in'
 const HorizontalTestimonials = () => {
   return (
     <section
-      className="border-t border-[#2d2d2d] w-full z-50"
+      className="border-t border-input w-full z-50"
     >
       <div
         className="container mx-auto px-4 py-12 flex items-center flex-col justify-center space-y-8"
@@ -26,8 +26,8 @@ const HorizontalTestimonials = () => {
             HorizontalTestimonialsItems.map((item, index) => (
               <SlideIn
                 key={index}
-                className='bg-[linear-gradient(219deg,#233e47_10%,#0c0b0b_60%)] bg-transparent p-4 rounded-lg
-                border border-[#2d3740] flex flex-col gap-4 max-w-xl hover:shadow-[0px_0px_70px_-12px_rgba(18,193,243,.5)] transition-shadow duration-300'
+                className='bg-[linear-gradient(219deg,#5ce1e666_10%,#fff_60%)] dark:bg-[linear-gradient(219deg,#233e47_10%,#0c0b0b_60%)] bg-transparent p-4 rounded-lg
+                border border-border flex flex-col gap-4 max-w-xl hover:shadow-[0px_0px_70px_-12px_rgba(18,193,243,.5)] transition-shadow duration-300'
               >
                 <iframe
                   src={item.video}
@@ -38,7 +38,7 @@ const HorizontalTestimonials = () => {
                 />
                 <div className='flex flex-col md:flex-row justify-center gap-4 h-full'>
                   <div className='w-full md:w-[70%]'>
-                    <div className='font-normal md:font-semibold text-gray-400'>
+                    <div className='font-normal md:font-semibold text-muted-foreground'>
                       {item.name}
                     </div>
                     <div className='flex flex-col items-start gap-2 font-semibold'>
@@ -52,7 +52,7 @@ const HorizontalTestimonials = () => {
                       </div>
                     </div>
                   </div>
-                  <div className='p-2 border border-[#495159] rounded-md bg-[#0d0f16] flex items-center flex-col w-full md:w-[30%] justify-center'>
+                  <div className='p-2 border border-border rounded-md bg-muted flex items-center flex-col w-full md:w-[30%] justify-center'>
                     <div className='flex gap-2 items-center'>
                       <TrendingUp className='text-primary' size={24} />
                       <p>WR</p>

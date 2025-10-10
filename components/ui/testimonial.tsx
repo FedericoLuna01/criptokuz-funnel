@@ -11,7 +11,7 @@ interface TestimonialProps {
 const Testimonial: React.FC<TestimonialProps> = ({ video, user, badInfo, goodInfo }) => {
   return (
     <article
-      className={cn("space-y-4 max-w-2xl w-full mx-auto p-3 bg-black border border-[#444d55] rounded-lg")}
+      className={cn("space-y-4 max-w-2xl w-full mx-auto p-3 bg-background border border-input rounded-lg")}
     >
       <iframe
         src={video}
@@ -23,7 +23,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ video, user, badInfo, goodInf
       <div
         className='flex flex-col gap-y-3 leading-none font-semibold'
       >
-        <div className="flex items-center gap-2 text-gray-300 ">
+        <div className="flex items-center gap-2 text-muted-foreground ">
           <p>{user}</p>
         </div>
         <div className="flex items-center gap-2">
