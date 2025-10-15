@@ -203,16 +203,16 @@ export const HorizontalTestimonialsItems = [
   },
   {
     id: 4,
-    name: "Marcos - 23 años - Estudiante",
-    video: "https://player.vimeo.com/video/961488017?h=a7a0d0f8f1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    name: "Diego - 24 años - Trabajador",
+    video: "https://player.vimeo.com/video/1127651832?h=0da1f2391b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     badInfo: "Utilizaba ICT para operar",
-    goodInfo: "Tiene 4 cuentas de fondeo gracias a HEW",
+    goodInfo: "Logro tener un sistema mecanizado",
     wr: 73
   },
   {
     id: 5,
     name: "Rodrigo - 22 años - Estudiante",
-    video: "https://player.vimeo.com/video/1085086259?h=dc526f395e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    video: "https://player.vimeo.com/video/1078114760?h=15545dcc66&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     badInfo: "Usaba indicadores y acción de precio",
     goodInfo: "Tiene un setup con el cual es rentable",
     wr: 76
