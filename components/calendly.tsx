@@ -13,11 +13,11 @@ const Calendly = () => {
 						.then((ReactPixel) => {
 							const pixelId = "1262635791863284";
 							ReactPixel.default.init(pixelId);
-							ReactPixel.default.fbq("track", "Schedule");
+							ReactPixel.default.fbq("track", "Lead");
 						})
 						.catch((error) => {
 							console.error(
-								"Error loading Facebook Pixel for Schedule tracking:",
+								"Error loading Facebook Pixel for Lead tracking:",
 								error,
 							);
 						});
