@@ -38,7 +38,7 @@ const ThankYouPage = () => {
 				/>
 				<Button size="xl" asChild>
 					<a
-						href="https://wa.me/5492984376411?text=Buenas,%20acabo%20de%20agendar%20una%20llamada%20con%20vos%20mi%20nombre%20es"
+						href="https://wa.me/542985096834?text=Buenas,%20acabo%20de%20agendar%20una%20llamada%20con%20vos%20mi%20nombre%20es"
 						rel="noopener"
 						target="_blank"
 						className="z-50 mb-10"

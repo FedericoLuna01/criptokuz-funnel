@@ -23,9 +23,9 @@ const HorizontalTestimonials = () => {
           className="grid grid-cols-1 lg:grid-cols-2 gap-10"
         >
           {
-            HorizontalTestimonialsItems.map((item, index) => (
+            HorizontalTestimonialsItems.map((item) => (
               <SlideIn
-                key={index}
+                key={item.video}
                 className='bg-[linear-gradient(219deg,#5ce1e666_10%,#fff_60%)] dark:bg-[linear-gradient(219deg,#233e47_10%,#0c0b0b_60%)] bg-transparent p-4 rounded-lg
                 border border-border flex flex-col gap-4 max-w-xl hover:shadow-[0px_0px_70px_-12px_rgba(18,193,243,.5)] transition-shadow duration-300'
               >

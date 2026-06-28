@@ -10,17 +10,17 @@ export const TestimonialsItems = [
 	{
 		id: 2,
 		video:
-			"https://player.vimeo.com/video/1055451273?h=c7d063e4e3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-		user: "Benjamin Gonzales - 19 años - Estudiante",
-		badInfo: "Intentaba operar con soportes y resistencias",
-		goodInfo: "Utilizo MT2 en mercados de baja capitalización como solana",
+			"https://player.vimeo.com/video/1205291271?h=d18e036bf3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+		user: "Mauro Martinez - 52 años - Freelancer",
+		badInfo: "Probo varias estrategias nunca tuvo consistencia",
+		goodInfo: "Aplico MT2 y hoy dia tiene claridad en su ejecución",
 	},
 	{
 		id: 3,
 		video:
 			"https://player.vimeo.com/video/961488529?h=49136f6c09&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 		user: "Matias - 26 años - Abogado",
-		badInfo: "Solo miraba el precio e interpretaba el grafico",
+		badInfo: "Solo miraba el precio e interpretaba el gráfico",
 		goodInfo: "Paso a tener un sistema que le permite ser rentable",
 	},
 	{
@@ -34,17 +34,33 @@ export const TestimonialsItems = [
 	{
 		id: 5,
 		video:
+			"https://player.vimeo.com/video/1205300613?h=7249f24813&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+		user: "Maximiliano Dotto  - 27 años - Trabajador",
+		badInfo: "Me había gastado mucho dinero en educación",
+		goodInfo: "Cambie mis creencias y vivo del trading",
+	},
+	{
+		id: 5,
+		video:
 			"https://player.vimeo.com/video/1030361997?h=d190bc0bba&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 		user: "Nehuen  - 22 años - Piloto de avion",
 		badInfo: "Usaba soportes y resistencias",
 		goodInfo: "Tiene un sistema sofisticado con el cual es rentable",
 	},
 	{
+		id: 2,
+		video:
+			"https://player.vimeo.com/video/1055451273?h=c7d063e4e3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+		user: "Benjamin Gonzales - 19 años - Estudiante",
+		badInfo: "Intentaba operar con soportes y resistencias",
+		goodInfo: "Utilizo MT2 en mercados de baja capitalización como solana",
+	},
+	{
 		id: 6,
 		video:
 			"https://player.vimeo.com/video/961487420?h=c573450c7d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 		user: "Juan - 23 años - Trabaja en JP Morgan",
-		badInfo: "Utilizaba conceptos de analisis para intentar operar",
+		badInfo: "Utilizaba conceptos de análisis para intentar operar",
 		goodInfo: "Hoy dia su setup le permite tener un WR de 66%",
 	},
 	{
@@ -76,8 +92,8 @@ export const TestimonialsItems = [
 		video:
 			"https://player.vimeo.com/video/1010740327?h=edb4254d07&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 		user: "Santiago  - 31 años - Analista",
-		badInfo: "Vivia consumiendo informacion gratuita",
-		goodInfo: "Hoy dia maneja un WR de 69%",
+		badInfo: "Vivía consumiendo información gratuita",
+		goodInfo: "Hoy día maneja un WR de 69%",
 	},
 	{
 		id: 11,
@@ -101,7 +117,7 @@ export const TestimonialsItems = [
 		video:
 			"https://player.vimeo.com/video/1019275019?h=8dad734c10&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 		user: "Carlos - 33 años - Ingeniero Industrial",
-		badInfo: "Vivia interpretando el mercado",
+		badInfo: "Vivía interpretando el mercado",
 		goodInfo: "Tiene un sistema que le permite ser rentable",
 	},
 	{
@@ -109,8 +125,8 @@ export const TestimonialsItems = [
 		video:
 			"https://player.vimeo.com/video/1021566781?h=215b8c9a4c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 		user: "Agustin  - 23 años - Estudiante",
-		badInfo: "Usaba medias moviles para operar",
-		goodInfo: "Entendio que con indicadores no iba a ir ni a la esquina",
+		badInfo: "Usaba medias móviles para operar",
+		goodInfo: "Entendió que con indicadores no iba a ir ni a la esquina",
 	},
 	{
 		id: 15,
@@ -172,7 +188,7 @@ export const TestimonialsItems = [
 		id: 22,
 		video:
 			"https://player.vimeo.com/video/1082706234?h=e534576854&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-		user: "Silvio - 34 años - Logistica ",
+		user: "Silvio - 34 años - Logística ",
 		badInfo: "Usaba Smart Money Concepts",
 		goodInfo: "Logró operar sin ansiedad y con setup en solo 3 meses",
 	},
@@ -207,6 +223,14 @@ export const TestimonialsItems = [
 			"https://player.vimeo.com/video/1127651832?h=0da1f2391b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 		badInfo: "Utilizaba ICT para operar",
 		goodInfo: "Logro tener un sistema mecanizado",
+	},
+	{
+		id: 27,
+		video:
+			"https://player.vimeo.com/video/1205293504?h=78000775fe&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+		user: "Joaquin Esposito - 29 años - Mecánico",
+		badInfo: "Antes soñaba con ICT/SMC y nunca gane nada",
+		goodInfo: "Hoy dia opero con un sistema rentable y vivo del trading",
 	},
 ];
 

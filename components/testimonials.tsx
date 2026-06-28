@@ -21,10 +21,10 @@ const Testimonials: React.FC<TestimonialProps> = ({
 				<Badge text="Estos son algunos de los traders que han pasado por nuestro programa" />
 				<Heading title={title} highlightWords={highlightWords} />
 				<div className="grid grid-cols-1 xl:grid-cols-2 gap-x-10 gap-y-5 md:gap-y-10">
-					{TestimonialsItems.map(({ id, video, user, badInfo, goodInfo }) => {
+					{TestimonialsItems.map(({ video, user, badInfo, goodInfo }) => {
 						return (
 							<Testimonial
-								key={id}
+								key={video}
 								video={video}
 								user={user}
 								badInfo={badInfo}
