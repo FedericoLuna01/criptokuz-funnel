@@ -4,9 +4,13 @@ window.HEW_CONFIG = {
   submissionEndpoint:
     "https://script.google.com/macros/s/AKfycbzLd1WBbw9JO4PSgjyyT_sGd20_HVDpKRXN2bEpaL1NNS4OgWuPtgF_WWSRFstxwLJ11w/exec",
 
-  // Destinos posteriores. Reemplazar antes de publicar.
-  calendarUrl: "",
-  baseOfferUrl: "",
+  // Rotación aleatoria 50/50 entre setters.
+  whatsappSetters: [
+    { name: "Sofia", number: "+54 2984 326722" },
+    { name: "Nico", number: "+54 2984 504372" },
+  ],
+  whatsappMessage:
+    "Hola, soy {name}. Completé el formulario del Plan HEW y quiero recibir mi plan personalizado.",
 
   // Enlaces legales. Reemplazar antes de publicar.
   privacyUrl: "#",

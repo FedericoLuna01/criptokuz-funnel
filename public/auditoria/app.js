@@ -3,8 +3,9 @@
 
   const config = {
     submissionEndpoint: "",
-    calendarUrl: "",
-    baseOfferUrl: "",
+    whatsappSetters: [],
+    whatsappMessage:
+      "Hola, soy {name}. Completé el formulario del Plan HEW y quiero recibir mi plan personalizado.",
     privacyUrl: "#",
     termsUrl: "#",
     landingVersion: "hew-v1",
@@ -78,142 +79,6 @@
     },
   ];
 
-  const applicationQuestions = [
-    {
-      id: "invested",
-      kicker: "Tu recorrido",
-      title: "¿Cuánto llevás invertido en tu formación y operativa como trader?",
-      description: "Incluí cursos, mentorías, señales, herramientas y cuentas fondeadas.",
-      options: [
-        ["invested_none", "Todavía no invertí"],
-        ["invested_under_500", "Menos de USD 500"],
-        ["invested_500_1500", "Entre USD 500 y USD 1.500"],
-        ["invested_1500_3000", "Entre USD 1.500 y USD 3.000"],
-        ["invested_over_3000", "Más de USD 3.000"],
-      ],
-    },
-    {
-      id: "capacity",
-      kicker: "Tu situación actual",
-      title: "Si vemos que podemos ayudarte, ¿qué nivel de inversión podrías asumir actualmente en tu formación?",
-      options: [
-        ["capacity_none", "Hoy no estoy en condiciones de invertir"],
-        ["capacity_base", "Hasta USD 600"],
-        ["capacity_mid", "Entre USD 1.000 y USD 2.000"],
-        ["capacity_1to1", "Más de USD 2.000"],
-      ],
-    },
-    {
-      id: "timing",
-      kicker: "Tu momento",
-      title: "¿Cuándo querés comenzar a corregir tu operativa?",
-      options: [
-        ["timing_now", "Ahora"],
-        ["timing_30_days", "Durante los próximos 30 días"],
-        ["timing_3_months", "En los próximos 3 meses"],
-        ["timing_researching", "Solo estoy investigando por el momento"],
-      ],
-    },
-  ];
-
-  const resultContent = {
-    result_foundation: {
-      badge: "ETAPA 01 · FUNDAMENTOS",
-      title: (name) => `${name}, hoy necesitás convertir tu operativa en un sistema medible.`,
-      diagnosis:
-        "Tus respuestas muestran que una parte importante de tus decisiones todavía depende de la interpretación del momento. Sin reglas exactas de entrada, invalidación y salida, no podés distinguir una pérdida normal del sistema de un error de ejecución.",
-      plan: [
-        "Elegí un solo mercado y una sola franja horaria.",
-        "Definí un único setup HEW: contexto, entrada, stop e invalidación.",
-        "Registrá una muestra inicial de 30 operaciones históricas.",
-        "Separá una operación válida que perdió de una operación fuera del plan.",
-        "No cambies de estrategia durante la medición.",
-      ],
-      metrics: [
-        "Adherencia a reglas",
-        "Winrate del setup",
-        "RR promedio",
-        "Expectativa por operación",
-        "Drawdown de la muestra",
-      ],
-    },
-    result_validation: {
-      badge: "ETAPA 02 · VALIDACIÓN",
-      title: (name) => `${name}, ya tenés una idea de cómo operar, pero todavía te falta evidencia.`,
-      diagnosis:
-        "El siguiente paso no es buscar otra estrategia. Es transformar lo que ya hacés en reglas medibles y comprobar qué ocurre en una muestra suficiente. Mientras tus números sean aproximados, cada racha negativa va a hacerte dudar y cambiar de método.",
-      plan: [
-        "Congelá las reglas actuales durante el período de prueba.",
-        "Definí qué convierte una oportunidad en setup A, B o descartable.",
-        "Completá o iniciá una muestra de 50–100 operaciones.",
-        "Segmentá los resultados por setup, sesión y contexto.",
-        "Revisá los números únicamente al terminar el bloque de medición.",
-      ],
-      metrics: [
-        "Winrate por setup",
-        "RR promedio real",
-        "Expectativa por setup",
-        "Frecuencia semanal",
-        "Backtest vs. ejecución real",
-      ],
-    },
-    result_execution: {
-      badge: "ETAPA 03 · EJECUCIÓN",
-      title: (name) => `${name}, el sistema existe; la fuga parece estar en la ejecución.`,
-      diagnosis:
-        "Tener reglas no alcanza si anticipás entradas, movés stops, aumentás riesgo o tomás operaciones que no cumplen las condiciones. Antes de escalar capital necesitás medir la distancia entre tu plan y lo que realmente ejecutás.",
-      plan: [
-        "Definí un checklist obligatorio antes de cada entrada.",
-        "Capturá pantalla antes y después de cada operación.",
-        "Separá resultado financiero de calidad de ejecución.",
-        "Establecé un límite diario de operaciones y riesgo.",
-        "Calculá el porcentaje semanal de cumplimiento del plan.",
-      ],
-      metrics: [
-        "Adherencia a reglas",
-        "Entradas anticipadas",
-        "Operaciones impulsivas",
-        "Riesgo planeado vs. ejecutado",
-        "Válidas vs. fuera del plan",
-      ],
-    },
-    result_scale: {
-      badge: "ETAPA 04 · OPTIMIZACIÓN",
-      title: (name) => `${name}, ya tenés una base medible. Ahora necesitás concentrar tu ventaja.`,
-      diagnosis:
-        "Tus respuestas indican que contás con reglas y datos. Para avanzar necesitás segmentar la muestra, eliminar operaciones de baja calidad y escalar únicamente aquello que conserva una expectativa positiva.",
-      plan: [
-        "Separá resultados por setup, sesión, mercado y contexto.",
-        "Identificá qué condiciones producen la mayor expectativa.",
-        "Eliminá o reducí los setups de bajo rendimiento.",
-        "Definí límites de drawdown antes de aumentar riesgo.",
-        "Validá cualquier ajuste en una muestra nueva antes de escalar.",
-      ],
-      metrics: [
-        "Expectativa por setup",
-        "Drawdown por etapa",
-        "Estabilidad entre muestras",
-        "Rendimiento por sesión",
-        "Ejecución al aumentar tamaño",
-      ],
-    },
-  };
-
-  const capitalNotes = {
-    capital_none:
-      "Tu prioridad no debería ser buscar un ingreso mensual todavía. Primero necesitás validar el sistema en backtest y demo, sin comprometer dinero destinado a gastos personales.",
-    capital_under_500:
-      "Con este capital, el foco debe estar en preservar la cuenta y validar la ejecución. No es responsable proyectar un ingreso fijo mensual a partir de una cuenta pequeña.",
-    capital_500_2000:
-      "Antes de plantear un objetivo mensual necesitás conocer la expectativa, el drawdown y el riesgo que tu sistema puede soportar. El capital no reemplaza una ventaja validada.",
-    capital_2000_5000:
-      "Tenés una base que permite medir la operativa real, pero cualquier escalado debe depender de una muestra validada y límites de riesgo definidos de antemano.",
-    capital_over_5000:
-      "La prioridad es proteger el capital. No aumentes el riesgo para forzar un objetivo mensual; escalá únicamente después de confirmar que la expectativa se mantiene.",
-    capital_prop:
-      "Tu plan debe contemplar pérdida diaria, drawdown máximo, consistencia y restricciones de la firma. No repitas challenges sin medir primero si tu sistema encaja con esas reglas.",
-  };
-
   const countryCodes = [
     ["AR", "+54", "Argentina"],
     ["MX", "+52", "México"],
@@ -238,22 +103,19 @@
   const progressCopy = document.getElementById("progressCopy");
   const progressTrack = document.getElementById("progressTrack");
   const progressFill = document.getElementById("progressFill");
-  const privacyLink = document.getElementById("privacyLink");
-  const termsLink = document.getElementById("termsLink");
+  const footerYear = document.getElementById("footerYear");
 
   const state = {
     view: "quiz",
     step: 0,
-    applicationStep: 0,
     answers: {},
-    application: {},
     lead: null,
+    setter: null,
     resultId: null,
     attribution: readAttribution(),
   };
 
-  privacyLink.href = config.privacyUrl || "#";
-  termsLink.href = config.termsUrl || "#";
+  footerYear.textContent = new Date().getFullYear();
 
   function readAttribution() {
     const params = new URLSearchParams(window.location.search);
@@ -367,15 +229,6 @@
       return;
     }
 
-    if (state.view === "application") {
-      progressTrack.hidden = false;
-      progressCopy.hidden = false;
-      backButton.hidden = false;
-      progressCopy.textContent = `Evaluación ${state.applicationStep + 1} de ${applicationQuestions.length}`;
-      progressFill.style.width = `${((state.applicationStep + 1) / applicationQuestions.length) * 100}%`;
-      return;
-    }
-
     progressTrack.hidden = true;
     progressCopy.hidden = true;
     backButton.hidden = true;
@@ -390,9 +243,9 @@
 
     app.innerHTML = `
       <div class="step">
-        <div class="step__kicker">Tu diagnóstico está listo</div>
+        <div class="step__kicker">Último paso</div>
         <h2>¿A dónde te enviamos tu Plan HEW personalizado?</h2>
-        <p class="step__description">Completá tus datos para ver el resultado ahora y recibir una copia.</p>
+        <p class="step__description">Completá tus datos y te llevamos directo a WhatsApp para continuar.</p>
 
         <form class="lead-form" id="leadForm" novalidate>
           <div class="field">
@@ -420,7 +273,7 @@
 
           <div class="field field--full">
             <button class="primary-button" id="leadSubmit" type="submit">
-              Ver mi Plan HEW personalizado <span aria-hidden="true">→</span>
+              Recibir mi Plan HEW por WhatsApp <span aria-hidden="true">→</span>
             </button>
             <div id="submissionError"></div>
             <p class="form-consent">
@@ -473,7 +326,7 @@
     const submitButton = document.getElementById("leadSubmit");
     const errorBox = document.getElementById("submissionError");
     submitButton.disabled = true;
-    submitButton.textContent = "Preparando tu diagnóstico…";
+    submitButton.textContent = "Abriendo WhatsApp…";
     errorBox.innerHTML = "";
 
     const [countryIso, countryCode] = String(formData.get("phone_country") || "AR|+54").split("|");
@@ -487,22 +340,67 @@
       phone_country_code: countryCode,
     };
     state.resultId = calculateResult();
+    state.setter = chooseSetter(state.lead);
+
+    if (!state.setter) {
+      submitButton.disabled = false;
+      submitButton.innerHTML = 'Recibir mi Plan HEW por WhatsApp <span aria-hidden="true">→</span>';
+      errorBox.innerHTML = `
+        <div class="submission-error" role="alert">
+          El contacto por WhatsApp no está disponible en este momento. Intentá nuevamente más tarde.
+        </div>
+      `;
+      return;
+    }
 
     const payload = buildPayload("lead");
     try {
       await submitPayload(payload);
       track("Lead");
-      renderResult();
-      scrollToFunnel();
+      redirectToWhatsApp();
     } catch (error) {
       submitButton.disabled = false;
-      submitButton.innerHTML = 'Ver mi Plan HEW personalizado <span aria-hidden="true">→</span>';
+      submitButton.innerHTML = 'Recibir mi Plan HEW por WhatsApp <span aria-hidden="true">→</span>';
       errorBox.innerHTML = `
         <div class="submission-error" role="alert">
           No pudimos guardar tus datos. Revisá tu conexión e intentá nuevamente.
         </div>
       `;
     }
+  }
+
+  function chooseSetter(lead) {
+    const setters = Array.isArray(config.whatsappSetters)
+      ? config.whatsappSetters.filter((setter) => setter?.name && setter?.number)
+      : [];
+    if (!setters.length) return null;
+
+    const randomValues = new Uint32Array(1);
+    if (window.crypto?.getRandomValues) {
+      window.crypto.getRandomValues(randomValues);
+      return setters[randomValues[0] % setters.length];
+    }
+    return setters[Math.floor(Math.random() * setters.length)];
+  }
+
+  function normalizeWhatsAppNumber(value) {
+    let digits = String(value || "").replace(/\D/g, "");
+    // WhatsApp exige el 9 para celulares argentinos en formato internacional.
+    if (/^54\d{10}$/.test(digits) && !digits.startsWith("549")) {
+      digits = `549${digits.slice(2)}`;
+    }
+    return digits;
+  }
+
+  function redirectToWhatsApp() {
+    const phone = normalizeWhatsAppNumber(state.setter.number);
+    const message = String(config.whatsappMessage || "")
+      .replaceAll("{name}", state.lead.first_name)
+      .replaceAll("{setter}", state.setter.name);
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    track("WhatsAppRedirect", { setter_name: state.setter.name });
+    window.location.assign(url);
   }
 
   function calculateResult() {
@@ -535,148 +433,6 @@
     return "result_validation";
   }
 
-  function renderResult() {
-    state.view = "result";
-    updateChrome();
-    const content = resultContent[state.resultId];
-    const name = state.lead.first_name;
-    const capitalNote = capitalNotes[state.answers.capital] || capitalNotes.capital_none;
-
-    app.innerHTML = `
-      <div class="step result">
-        <div class="result__badge">${escapeHtml(content.badge)}</div>
-        <h2>${escapeHtml(content.title(name))}</h2>
-        <div class="result__diagnosis">${escapeHtml(content.diagnosis)}</div>
-
-        <div class="result-grid">
-          <section class="result-card">
-            <h3>Tu plan inicial de 7 días</h3>
-            <ol>${content.plan.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>
-          </section>
-          <section class="result-card">
-            <h3>Métricas prioritarias</h3>
-            <ul>${content.metrics.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
-          </section>
-        </div>
-
-        <div class="capital-note">
-          <strong>Sobre tu capital:</strong> ${escapeHtml(capitalNote)}
-        </div>
-
-        <div class="result-cta">
-          <h3>¿Querés saber si HEW puede ayudarte a corregir este punto?</h3>
-          <p>Respondé tres preguntas adicionales. Si tu situación encaja con uno de nuestros programas, te mostraremos el siguiente paso adecuado.</p>
-          <button class="primary-button" id="applicationStart" type="button">
-            Quiero saber si HEW es para mí <span aria-hidden="true">→</span>
-          </button>
-        </div>
-      </div>
-    `;
-
-    track("ViewResult", { result_id: state.resultId });
-    document.getElementById("applicationStart").addEventListener("click", () => {
-      track("ApplicationStart");
-      state.applicationStep = 0;
-      renderApplicationQuestion();
-    });
-  }
-
-  function renderApplicationQuestion() {
-    state.view = "application";
-    updateChrome();
-    const question = applicationQuestions[state.applicationStep];
-    app.innerHTML = `
-      <div class="step">
-        <div class="step__kicker">${escapeHtml(question.kicker)}</div>
-        <h2>${escapeHtml(question.title)}</h2>
-        ${question.description ? `<p class="step__description">${escapeHtml(question.description)}</p>` : ""}
-        ${renderOptions(question, state.application[question.id])}
-      </div>
-    `;
-    bindOptionButtons((value) => selectApplicationAnswer(question.id, value));
-  }
-
-  function selectApplicationAnswer(id, value) {
-    state.application[id] = value;
-    window.setTimeout(async () => {
-      if (state.applicationStep < applicationQuestions.length - 1) {
-        state.applicationStep += 1;
-        renderApplicationQuestion();
-        return;
-      }
-
-      try {
-        await submitPayload(buildPayload("application"));
-      } catch (error) {
-        // El lead ya fue guardado. La ruta se muestra igualmente y el envío se puede reintentar desde el CRM.
-      }
-      track("CompleteRegistration");
-      renderRoute();
-    }, 230);
-  }
-
-  function determineRoute() {
-    const { capacity, timing } = state.application;
-    if (capacity === "capacity_1to1" && ["timing_now", "timing_30_days"].includes(timing)) {
-      return "one_to_one";
-    }
-    if (capacity === "capacity_base" && timing !== "timing_researching") {
-      return "base";
-    }
-    if (capacity === "capacity_mid") {
-      return "review";
-    }
-    return "nurture";
-  }
-
-  function renderRoute() {
-    state.view = "route";
-    updateChrome();
-    const route = determineRoute();
-    const screens = {
-      one_to_one: {
-        icon: "↗",
-        title: "Tu situación encaja para evaluar un acompañamiento personalizado.",
-        text: "El siguiente paso es reservar una entrevista para revisar tu operativa, tus métricas y si HEW tiene sentido para tu caso.",
-        button: "Reservar mi entrevista",
-        url: config.calendarUrl,
-      },
-      base: {
-        icon: "✓",
-        title: "El programa BASE puede ser el siguiente paso adecuado.",
-        text: "Está pensado para construir los fundamentos y trabajar el contenido formativo sin acompañamiento individual.",
-        button: "Conocer el programa BASE",
-        url: config.baseOfferUrl,
-      },
-      review: {
-        icon: "✓",
-        title: "Recibimos tu evaluación.",
-        text: "Tu situación requiere una revisión manual para indicarte el siguiente paso más coherente. El equipo podrá contactarte con los datos que dejaste.",
-      },
-      nurture: {
-        icon: "✓",
-        title: "Tu Plan HEW ya está listo.",
-        text: "Empezá por implementar el plan de 7 días. Cuando tengas una muestra y estés en condiciones de avanzar, vas a poder solicitar una evaluación.",
-      },
-    };
-    const screen = screens[route];
-    const hasUrl = Boolean(screen.url && screen.url !== "#");
-
-    app.innerHTML = `
-      <div class="step route-screen">
-        <div class="route-screen__icon" aria-hidden="true">${escapeHtml(screen.icon)}</div>
-        <h2>${escapeHtml(screen.title)}</h2>
-        <p>${escapeHtml(screen.text)}</p>
-        ${
-          screen.button && hasUrl
-            ? `<a class="link-button" href="${escapeHtml(screen.url)}" target="_blank" rel="noopener">${escapeHtml(screen.button)} →</a>`
-            : ""
-        }
-        ${screen.button && !hasUrl ? `<div class="demo-notice">Destino pendiente de configurar en <code>config.js</code>.</div>` : ""}
-      </div>
-    `;
-  }
-
   function buildPayload(type) {
     return {
       submission_type: type,
@@ -686,8 +442,10 @@
       result_id: state.resultId || "",
       ...state.attribution,
       ...(state.lead || {}),
+      setter_name: state.setter?.name || "",
+      setter_phone: normalizeWhatsAppNumber(state.setter?.number || ""),
       answers: { ...state.answers },
-      application: type === "application" ? { ...state.application } : {},
+      application: {},
     };
   }
 
@@ -718,14 +476,6 @@
       state.step = questions.length - 1;
       renderQuestion();
       return;
-    }
-    if (state.view === "application") {
-      if (state.applicationStep > 0) {
-        state.applicationStep -= 1;
-        renderApplicationQuestion();
-      } else {
-        renderResult();
-      }
     }
   });
 
