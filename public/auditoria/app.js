@@ -103,7 +103,6 @@
   const progressCopy = document.getElementById("progressCopy");
   const progressTrack = document.getElementById("progressTrack");
   const progressFill = document.getElementById("progressFill");
-  const footerYear = document.getElementById("footerYear");
 
   const state = {
     view: "quiz",
@@ -114,8 +113,6 @@
     resultId: null,
     attribution: readAttribution(),
   };
-
-  footerYear.textContent = new Date().getFullYear();
 
   function readAttribution() {
     const params = new URLSearchParams(window.location.search);

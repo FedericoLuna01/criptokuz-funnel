@@ -822,6 +822,25 @@ a {
   color: #8b969c;
 }
 
+.legal-notice {
+  margin-top: 20px;
+  color: #9ca3af;
+  font-size: 12px;
+  line-height: 1.625;
+  text-align: left;
+}
+
+.legal-notice h2 {
+  margin: 0 0 8px;
+  color: #d1d5db;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.legal-notice p + p {
+  margin-top: 8px;
+}
+
 .noscript-message {
   position: fixed;
   inset: auto 16px 16px;

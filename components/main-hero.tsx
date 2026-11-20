@@ -11,7 +11,7 @@ const MainHero = () => {
             text="Exclusivo para Traders/Operadores de mercado"
           />
           <div className="text-xl sm:text-4xl font-bold text-center max-w-5xl">
-            Te instalamos un sistema a traves de <span className='uppercase text-primary drop-shadow-[0_0_10px_rgba(18,193,243,0.7)]'>HEW, tiempo, volumen y kpis</span>, para operar sin interpretación, y con pautas-métricas medibles
+            Ayudo a traders a dejar de operar por intuición y tener un setup a través de <span className='uppercase text-primary drop-shadow-[0_0_10px_rgba(18,193,243,0.7)]'>HEW</span>
           </div>
           <p className="max-w-3xl text-center text-base md:text-xl text-muted-foreground z-50">
             Sin señales, sin indicadores, ni robots mágicos, con un solo sistema validado, con scorecard y métricas tangibles
